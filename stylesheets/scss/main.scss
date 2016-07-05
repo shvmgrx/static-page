@@ -1,0 +1,832 @@
+@import '_constants';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $white;
+  font-size: 0.85em;
+
+  &.foolsday *{
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+  }
+
+  section {
+    width: 100%;
+    position: relative;
+  }
+
+  div {
+    position: relative;
+  }
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/*
+ * shared classes
+ */
+
+// TODO fix fonts on firefox
+.montserrat, .montserrat-bold {
+  font-family: $montserrat;
+}
+
+.montserrat-bold {
+  font-weight: 700;
+}
+
+.lato {
+  font-family: $lato;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+a {
+  color: $yellow;
+}
+
+.black-shadow {
+	text-shadow: -2px 2px 0px $black;
+}
+
+/* Ben's stuff
+ * temporarily
+ */
+
+
+section {
+  h2 {
+    font-size: 3.5em;
+    letter-spacing: 5px;
+    line-height: 1.3em;
+    margin:0;
+  }
+
+  p,
+  label,
+  input {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input {
+    padding: 10px 2%;
+    width: 80%;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: $yellow;
+    padding: 0.8em 3em;
+    color: $red;
+    font-weight: bold;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+  }
+
+
+  .button:hover {
+    background-color: $turquoise;
+    color: $white;
+  }
+}
+
+section.ui.page.grid {
+  min-width: 0;
+}
+section.ui.page.grid.padded {
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+
+section#splash {
+  // workaround to simulate min-height: 100%
+  // see http://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
+  display: table;
+  table-layout: fixed;
+  height: inherit;
+  width: 100%; // there's a one pixel width bug here
+	background: url(../assets/images/paper.png) no-repeat center center;
+	background-size: cover;
+
+  div.splash-container {
+    font-size: 1em;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+		overflow: hidden;
+    // add space to account for nav bar
+    padding-bottom: 3.5em;
+
+    div.splash-banner {
+      width: 100%;
+      margin: 0 auto 0 auto;
+
+			.splash-logo-unit-cont {
+				z-index: 3;
+				transform: rotate(-20deg);
+			}
+
+			.splash-col {
+				float: left; 
+				width: 50%;
+			}
+
+			.splash-img {
+				float: right;
+				height: 90vh;
+			}
+
+			.splash-title-cont {
+				margin-top: 50vh;
+				width: 50%;
+				white-space: nowrap;
+      }
+
+      img {
+        max-width: 1000%;
+        max-height: 1000%;
+      }
+
+      h1.title {
+        margin: 0;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
+        color: $black;
+      }
+
+      h2.subtitle {
+        margin: 0;
+        line-height: 1.2em;
+        letter-spacing: 0;
+        font-size: 1.4em;
+        color: $black;
+				margin-bottom: 1em;
+
+				&.large {
+					display: block;
+				}
+				&.mobile {
+					display: none;
+				}
+      }
+    }
+  }
+
+  div.splash-text {
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+
+    h2.title {
+      line-height: 1.1em;
+      font-size: 3em; // fallback
+      font-size: 5.5vw;
+      margin: 0;
+      letter-spacing: 8px;
+      color: $green;
+    }
+    h2.title:focus {
+      outline: 0px solid transparent;
+    }
+  }
+}
+
+#navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  .menu {
+    background-color: $black;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+
+    .item {
+      width: 8em;
+      padding-top: 1.2em;
+      border-bottom: 4px solid transparent;
+      color: $white;
+      font-weight: bold;
+
+      &.wide {
+        width: 9em;
+      }
+    }
+
+    #goto-about.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $pink;
+    }
+    #goto-faq.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $turquoise;
+    }
+    #goto-reg-now.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $yellow;
+    }
+  }
+}
+
+#navbar.fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 5;
+}
+
+#infobar {
+  background-color: $green;
+  text-align: center;
+
+  p {
+    color: $white;
+    font-size: 1.2em;
+    padding: 16px;
+    margin: 0;
+  }
+}
+
+img#techx {
+  width: 100px;
+}
+
+section#about{
+  background: $pink;
+  min-height: 240px;
+  color: $white;
+	z-index: 4;
+
+  .ui.page.grid.padded {
+    padding-bottom: 5%;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  p.lato {
+    text-align: left;
+    font-size: 1.2em;
+  }
+}
+
+#social {
+  a {
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+    margin: 0;
+    padding-left: 5px;
+  }
+  a:hover {
+    color: $black;
+  }
+  .icon {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.8em 1em;
+  }
+
+  .icon:hover {
+    text-shadow: 0 0 3px $turquoise;
+    cursor: pointer;
+  }
+
+  a.social {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+section#schedule {
+  background: $green;
+  min-height: 80px;
+  color: $white;
+  .schedule.grid {
+    margin-top: 20px;
+  }
+}
+
+section#faq {
+  background: $turquoise;
+	z-index: 4;
+
+  .column {
+    text-align: left;
+    margin-bottom: 1.5em;
+  }
+  .row {
+    margin: 0 auto;
+		border-radius: 4px;
+		background-color: lighten($turquoise, 9%);
+  }
+  h2 {
+    color:$white;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  h2.large {
+    display: block;
+  }
+  h2.mobile {
+    display: none;
+  }
+  .question {
+    color: $black;
+    font-size: 1.5em;
+  }
+  p.answer {
+    color: $black;
+  }
+}
+
+section#reg-now {
+  background: $yellow;
+  min-height: 240px;
+  color: $white;
+	z-index: 4;
+
+  .ui.page.grid.padded {
+    padding-bottom: 5%;
+  }
+
+	.reg-now-form-cont {
+		padding: 2em 2em;
+		border-radius: 4px;
+		background-color: $green;
+
+    .thankyou {
+      margin-top: 1em;
+    }
+
+		.reg-now-form {
+			margin-top: 2em;
+
+			.ui.button {
+				background-color: $black;
+				color: $white;
+				width: auto;
+			}
+			.ui.button:hover {
+				background-color: lighten($black, 5%);
+			}
+			.ui.button:active {
+				background-color: darken($black, 5%);
+			}
+		}
+	}
+}
+
+/** Final stuff **/
+
+
+section#sponsor {
+  background: white;
+  color: $green;
+
+  img {
+    padding: 10px 10px;
+  }
+
+  p {
+    margin-bottom: 5%;
+  }
+
+  #sponsor-email {
+    color: $green;
+    text-decoration: underline;
+  }
+
+  .tier {
+    padding: 0 5%;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 16px;
+  }
+
+  .platinum img{
+    width: 44%;
+  }
+    #aqr{
+      width: 225px;
+      height:auto;
+    }
+
+  .gold img {
+    width: 27.5%;
+  }
+
+  .silver img {
+    width: 18.5%;
+  }
+
+  .bronze {
+    padding: 2% 5%;
+  }
+
+  .bronze img {
+    width: 14%;
+  }
+}
+
+#footer {
+  background: $offwhite;
+  text-align: center;
+  padding-top: 5%;
+	z-index: 4;
+
+  #footersplash {
+    max-width: 300px;
+
+    width: 60%;
+    margin: 0 auto;
+
+    h2 {
+      color: $black;
+      text-transform: uppercase;
+    }
+  }
+
+  #color-bars {
+		padding-top: 2em;
+
+		div {
+			width: 20%;
+			float: left;
+			height: 3em;
+		}
+		#color-bar1 { background-color: $pink; }
+		#color-bar2 { background-color: $turquoise; }
+		#color-bar3 { background-color: $yellow; }
+		#color-bar4 { background-color: $green; }
+		#color-bar5 { background-color: $orange; }
+  }
+}
+
+
+/* hiding faq */
+.angle {
+  display: none;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.angle-rotated {
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.answer-hidden {
+    display: none;
+  }
+.question-hidden {
+    margin: 0;
+  }
+
+#dot {
+    transition: color 0.5s ease;
+    &:hover {
+        color: $yellow;
+        cursor: pointer;
+    }
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+  section#faq {
+    h2.large {
+      display: none;
+    }
+    h2.mobile {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  html,body {
+    font-size: 1em;
+  }
+  #navbar {
+    .menu .item {
+      width: 7em;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+    }
+  }
+  section#splash {
+    div.splash-container {
+			display: block;
+
+      div.splash-banner {
+        width: 100%;
+				margin-top: 2em;
+				margin-top: 5.5vh;
+
+				.splash-logo-unit-cont {
+					transform: rotate(0deg);
+					text-align: center;
+				}
+
+  			.splash-img {
+  				height: 60vh;
+					float: none;
+  			}
+
+				.splash-col {
+					float: none;
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
+
+				.splash-title-cont {
+					margin-top: 0;
+					width: 100%;
+				}
+
+        h1.title {
+          letter-spacing: 8px; // fallback
+          letter-spacing: 1vh;
+          font-size: 3em;  // fallback
+          font-size: 8vh;
+        }
+  
+        h2.subtitle {
+          line-height: 1.2em;
+          line-height: 3.2vh;
+          letter-spacing: 0;
+          font-size: 1.4em;
+          font-size: 3.7vh;
+
+					&.date {
+						margin-bottom: 0;
+					}
+        }
+      } 
+    }
+  }
+
+  section.ui.page.grid.padded {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .question {
+    cursor: pointer;
+  }
+
+  #navbar.fixed {
+    position: relative;
+  }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+      margin: 1.5em 2em;
+    }
+
+    .platinum img{
+      width: 50%;
+    }
+
+    .gold img {
+      width: 37%;
+    }
+
+    .silver img {
+      width: 25%;
+    }
+
+    .bronze img {
+      width: 15%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#splash {
+
+    div.splash-container {
+
+      div.splash-banner {
+				margin-top: 0;
+
+        .splash-logo-unit-cont {
+          transform: rotate(0deg);
+          margin-top: 10vw;
+        }
+
+        .splash-img {
+          transform: rotate(0deg);
+          width: 90vw;
+        }
+
+        .title {
+          font-size: 2.8em!important;
+        }
+
+				h2.subtitle {
+				  &.large {
+				  	display: none;
+				  }
+				  &.mobile {
+				  	display: block;
+				  }
+				}
+      }
+
+      div.splash-text {
+        .title {
+          font-size: 2.8em;
+        }
+      }
+    }
+  }
+
+  section h2 {
+    font-size: 3em;
+  }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+      margin: 1em 2em;
+    }
+
+    .platinum img{
+      width: 75%;
+    }
+
+    .gold img {
+      width: 65%;
+    }
+
+    .silver img {
+      width: 45%;
+    }
+
+    .bronze img {
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  section#splash {
+
+    div.splash-container {
+
+      div.splash-banner {
+        .splash-logo-unit-cont {
+          transform: rotate(0deg);
+          margin-top: 0;
+        }
+
+        .splash-img {
+          transform: rotate(0deg);
+          width: auto;
+          height: auto;
+        }
+
+        .title {
+          font-size: 2.5em!important;
+        }
+      }
+
+      div.splash-text {
+        .title {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+
+  section.ui.page.grid.padded {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  section input {
+    margin: 2px auto;
+  }
+  section h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  section#faq .question {
+    font-size: 1.3em;
+  }
+  section#splash {
+    div.splash-container {
+      // undo space to account for relative nav bar
+      padding-bottom: 0em;
+      display: block;
+      div.splash-banner {
+        h1.title {
+          font-size: 1.5em;
+        }
+      }
+    }
+    div.splash-text {
+      h2.title {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+      margin: 1em;
+    }
+
+    .platinum img{
+      width: 75%;
+    }
+
+    .gold img {
+      width: 65%;
+    }
+
+    .silver img {
+      width: 45%;
+    }
+
+    .bronze img {
+      width: 30%;
+    }
+  }
+
+  section#footer {
+    .icon {
+      width: 20px;
+    }
+    #color-bars {
+			div {
+        height: 1.5em;
+      }
+    }
+  }
+}
