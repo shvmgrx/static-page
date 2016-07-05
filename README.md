@@ -8,8 +8,8 @@ This project is based on the HackMIT landing page.
 `https://github.com/techx/hackmit-splash`
 
 
-Since this Github pages, the public-facing branch is `gh-pages`. Therefore, `gh-pages` is a sacred branch, do not commit there unless you are 100% certain it is deploy-ready.
-
+The `master` branch is deployed on https://2016.jacobshack.com.
+The `gh-pages` branch is deployed on https://2016.jacobshack.com/dev
 
 Testing
 -------
