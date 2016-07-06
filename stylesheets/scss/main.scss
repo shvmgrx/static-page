@@ -5,7 +5,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: $white;
+  background-color:$white;
   font-size: 0.85em;
 
   &.foolsday *{
@@ -142,8 +142,6 @@ section#splash {
   table-layout: fixed;
   height: inherit;
   width: 100%; // there's a one pixel width bug here
-	background: url(../assets/images/paper.png) no-repeat center center;
-	background-size: cover;
 
   div.splash-container {
     font-size: 1em;
@@ -156,32 +154,24 @@ section#splash {
 
     div.splash-banner {
       width: 100%;
+      height: inherit;
       margin: 0 auto 0 auto;
 
-			.splash-logo-unit-cont {
-				z-index: 3;
-				transform: rotate(-20deg);
-			}
-
-			.splash-col {
-				float: left; 
-				width: 50%;
-			}
-
-			.splash-img {
-				float: right;
-				height: 90vh;
-			}
-
-			.splash-title-cont {
-				margin-top: 50vh;
-				width: 50%;
-				white-space: nowrap;
-      }
+      display: flex;
+      justify-content: center;
 
       img {
-        max-width: 1000%;
-        max-height: 1000%;
+        /*
+        background: url('../assets/images/jacobshack_logo.png') no-repeat center 0%;
+        background-size: contain;
+        */
+        display: flex;
+        align-self: flex-start;
+
+        margin-top: 3.5em;
+
+        width: 75%;
+        max-width: 768px;
       }
 
       h1.title {

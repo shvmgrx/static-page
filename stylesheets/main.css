@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 0.85em; }
   html.foolsday *, body.foolsday * {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
@@ -39,7 +39,7 @@ a {
   color: #ffe86b; }
 
 .black-shadow {
-  text-shadow: -2px 2px 0px #0b3b4b; }
+  text-shadow: -2px 2px 0px #06447a; }
 
 /* Ben's stuff
  * temporarily
@@ -83,7 +83,7 @@ section .button {
   cursor: pointer; }
 section .button:hover {
   background-color: #4ecdc4;
-  color: white; }
+  color: #ffffff; }
 
 section.ui.page.grid {
   min-width: 0; }
@@ -96,9 +96,7 @@ section#splash {
   display: table;
   table-layout: fixed;
   height: inherit;
-  width: 100%;
-  background: url(../assets/images/paper.png) no-repeat center center;
-  background-size: cover; }
+  width: 100%; }
   section#splash div.splash-container {
     font-size: 1em;
     display: table-cell;
@@ -108,36 +106,33 @@ section#splash {
     padding-bottom: 3.5em; }
     section#splash div.splash-container div.splash-banner {
       width: 100%;
-      margin: 0 auto 0 auto; }
-      section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
-        z-index: 3;
-        transform: rotate(-20deg); }
-      section#splash div.splash-container div.splash-banner .splash-col {
-        float: left;
-        width: 50%; }
-      section#splash div.splash-container div.splash-banner .splash-img {
-        float: right;
-        height: 90vh; }
-      section#splash div.splash-container div.splash-banner .splash-title-cont {
-        margin-top: 50vh;
-        width: 50%;
-        white-space: nowrap; }
+      height: inherit;
+      margin: 0 auto 0 auto;
+      display: flex;
+      justify-content: center; }
       section#splash div.splash-container div.splash-banner img {
-        max-width: 1000%;
-        max-height: 1000%; }
+        /*
+        background: url('../assets/images/jacobshack_logo.png') no-repeat center 0%;
+        background-size: contain;
+        */
+        display: flex;
+        align-self: flex-start;
+        margin-top: 3.5em;
+        width: 75%;
+        max-width: 768px; }
       section#splash div.splash-container div.splash-banner h1.title {
         margin: 0;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
         font-size: 5.5vw;
-        color: #0b3b4b; }
+        color: #06447a; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
         line-height: 1.2em;
         letter-spacing: 0;
         font-size: 1.4em;
-        color: #0b3b4b;
+        color: #06447a;
         margin-bottom: 1em; }
         section#splash div.splash-container div.splash-banner h2.subtitle.large {
           display: block; }
@@ -163,7 +158,7 @@ section#splash {
   width: 100%;
   z-index: 101; }
   #navbar .menu {
-    background-color: #0b3b4b;
+    background-color: #06447a;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
@@ -173,21 +168,21 @@ section#splash {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
-      color: white;
+      color: #ffffff;
       font-weight: bold; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
-      color: white;
-      background: #0b3b4b;
+      color: #ffffff;
+      background: #06447a;
       border-bottom: 3px solid #fc5454; }
     #navbar .menu #goto-faq.item:hover {
-      color: white;
-      background: #0b3b4b;
+      color: #ffffff;
+      background: #06447a;
       border-bottom: 3px solid #4ecdc4; }
     #navbar .menu #goto-reg-now.item:hover {
-      color: white;
-      background: #0b3b4b;
+      color: #ffffff;
+      background: #06447a;
       border-bottom: 3px solid #ffe86b; }
 
 #navbar.fixed {
@@ -200,7 +195,7 @@ section#splash {
   background-color: #c9d41b;
   text-align: center; }
   #infobar p {
-    color: white;
+    color: #ffffff;
     font-size: 1.2em;
     padding: 16px;
     margin: 0; }
@@ -211,7 +206,7 @@ img#techx {
 section#about {
   background: #fc5454;
   min-height: 240px;
-  color: white;
+  color: #ffffff;
   z-index: 4; }
   section#about .ui.page.grid.padded {
     padding-bottom: 5%; }
@@ -223,12 +218,12 @@ section#about {
 
 #social a {
   text-decoration: none;
-  color: #0b3b4b;
+  color: #06447a;
   text-align: center;
   margin: 0;
   padding-left: 5px; }
 #social a:hover {
-  color: #0b3b4b; }
+  color: #06447a; }
 #social .icon {
   font-size: 2em;
   text-align: center;
@@ -237,13 +232,13 @@ section#about {
   text-shadow: 0 0 3px #4ecdc4;
   cursor: pointer; }
 #social a.social {
-  color: #0b3b4b;
+  color: #06447a;
   text-decoration: none; }
 
 section#schedule {
   background: #c9d41b;
   min-height: 80px;
-  color: white; }
+  color: #ffffff; }
   section#schedule .schedule.grid {
     margin-top: 20px; }
 
@@ -258,7 +253,7 @@ section#faq {
     border-radius: 4px;
     background-color: #72d7d0; }
   section#faq h2 {
-    color: white;
+    color: #ffffff;
     text-align: left;
     margin-bottom: 1em; }
   section#faq h2.large {
@@ -266,15 +261,15 @@ section#faq {
   section#faq h2.mobile {
     display: none; }
   section#faq .question {
-    color: #0b3b4b;
+    color: #06447a;
     font-size: 1.5em; }
   section#faq p.answer {
-    color: #0b3b4b; }
+    color: #06447a; }
 
 section#reg-now {
   background: #ffe86b;
   min-height: 240px;
-  color: white;
+  color: #ffffff;
   z-index: 4; }
   section#reg-now .ui.page.grid.padded {
     padding-bottom: 5%; }
@@ -287,13 +282,13 @@ section#reg-now {
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
-        background-color: #0b3b4b;
-        color: white;
+        background-color: #06447a;
+        color: #ffffff;
         width: auto; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
-        background-color: #0e4c61; }
+        background-color: #075292; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
-        background-color: #082a35; }
+        background-color: #053662; }
 
 /** Final stuff **/
 section#sponsor {
@@ -339,7 +334,7 @@ section#sponsor {
     width: 60%;
     margin: 0 auto; }
     #footer #footersplash h2 {
-      color: #0b3b4b;
+      color: #06447a;
       text-transform: uppercase; }
   #footer #color-bars {
     padding-top: 2em; }
@@ -541,3 +536,5 @@ section#sponsor {
     width: 20px; }
   section#footer #color-bars div {
     height: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */
