@@ -7,9 +7,8 @@ Atribution
 This project is based on the HackMIT landing page.
 `https://github.com/techx/hackmit-splash`
 
+The `master` branch will be deployed at https://2016.jacobshack.com once it's ready.
 
-The `master` branch is deployed on https://2016.jacobshack.com.
-The `gh-pages` branch is deployed on https://2016.jacobshack.com/dev
 
 Testing
 -------
@@ -19,4 +18,4 @@ To view the splash page on your own computer, simply run `python -m SimpleHTTPSe
 Dev
 ---
 
-Make sure to compile your scss appropriately. Something like `sass --watch /some/path/hackmit-splash/stylesheets/scss:/some/path/hackmit-splash/stylesheets` suffices.
+Make sure to compile your scss appropriately. Something like `sass --watch stylesheets/scss:stylesheets` suffices.
