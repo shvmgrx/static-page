@@ -31,16 +31,16 @@ body {
  */
 
 // TODO fix fonts on firefox
-.montserrat, .montserrat-bold {
-  font-family: $montserrat;
+.source, .source-bold {
+  font-family: $source;
 }
 
-.montserrat-bold {
+.source-bold {
   font-weight: 700;
 }
 
-.lato {
-  font-family: $lato;
+.droid {
+  font-family: $droid;
   font-weight: 600;
 }
 
@@ -48,16 +48,12 @@ body {
   display: none;
 }
 
-.title {
-  text-transform: uppercase;
-}
-
 a {
-  color: $yellow;
+  color: $orange;
 }
 
 .black-shadow {
-	text-shadow: -2px 2px 0px $black;
+	text-shadow: -2px 2px 0px $blue;
 }
 
 /* Ben's stuff
@@ -106,11 +102,11 @@ section {
   .button {
     display: inline-block;
     margin: 15px auto 0px auto;
-    background-color: $yellow;
+    background-color: $orange;
     padding: 0.8em 3em;
     color: $red;
     font-weight: bold;
-    font-family: $montserrat;
+    font-family: $source;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1em;
@@ -180,7 +176,7 @@ section#splash {
         line-height: 1.2em;
         font-size: 3em;  // fallback
         font-size: 5.5vw;
-        color: $black;
+        color: $blue;
       }
 
       h2.subtitle {
@@ -188,7 +184,7 @@ section#splash {
         line-height: 1.2em;
         letter-spacing: 0;
         font-size: 1.4em;
-        color: $black;
+        color: $blue;
 				margin-bottom: 1em;
 
 				&.large {
@@ -226,8 +222,8 @@ section#splash {
   width: 100%;
   z-index: 101;
   .menu {
-    background-color: $black;
-    font-family: $montserrat;
+    background-color: $blue;
+    font-family: $source;
     text-transform: uppercase;
     font-size: 1em;
     text-align: center;
@@ -247,18 +243,18 @@ section#splash {
 
     #goto-about.item:hover {
       color: $white;
-      background: $black;
-      border-bottom: 3px solid $pink;
+      background: $blue;
+      border-bottom: 3px solid $red;
     }
     #goto-faq.item:hover {
       color: $white;
-      background: $black;
+      background: $blue;
       border-bottom: 3px solid $turquoise;
     }
     #goto-reg-now.item:hover {
       color: $white;
-      background: $black;
-      border-bottom: 3px solid $yellow;
+      background: $blue;
+      border-bottom: 3px solid $orange;
     }
   }
 }
@@ -287,7 +283,7 @@ img#techx {
 }
 
 section#about{
-  background: $pink;
+  background: $red;
   min-height: 240px;
   color: $white;
 	z-index: 4;
@@ -300,7 +296,7 @@ section#about{
     text-align: left;
   }
 
-  p.lato {
+  p.droid {
     text-align: left;
     font-size: 1.2em;
   }
@@ -309,13 +305,13 @@ section#about{
 #social {
   a {
     text-decoration: none;
-    color: $black;
+    color: $blue;
     text-align: center;
     margin: 0;
     padding-left: 5px;
   }
   a:hover {
-    color: $black;
+    color: $blue;
   }
   .icon {
     font-size: 2em;
@@ -329,7 +325,7 @@ section#about{
   }
 
   a.social {
-    color: $black;
+    color: $blue;
     text-decoration: none;
   }
 }
@@ -368,16 +364,16 @@ section#faq {
     display: none;
   }
   .question {
-    color: $black;
+    color: $blue;
     font-size: 1.5em;
   }
   p.answer {
-    color: $black;
+    color: $blue;
   }
 }
 
 section#reg-now {
-  background: $yellow;
+  background: $orange;
   min-height: 240px;
   color: $white;
 	z-index: 4;
@@ -389,7 +385,7 @@ section#reg-now {
 	.reg-now-form-cont {
 		padding: 2em 2em;
 		border-radius: 4px;
-		background-color: $green;
+		background-color: darken($orange, 10%);
 
     .thankyou {
       margin-top: 1em;
@@ -399,15 +395,15 @@ section#reg-now {
 			margin-top: 2em;
 
 			.ui.button {
-				background-color: $black;
+				background-color: $blue;
 				color: $white;
 				width: auto;
 			}
 			.ui.button:hover {
-				background-color: lighten($black, 5%);
+				background-color: lighten($blue, 5%);
 			}
 			.ui.button:active {
-				background-color: darken($black, 5%);
+				background-color: darken($blue, 5%);
 			}
 		}
 	}
@@ -486,7 +482,7 @@ section#sponsor {
     margin: 0 auto;
 
     h2 {
-      color: $black;
+      color: $blue;
       text-transform: uppercase;
     }
   }
@@ -499,11 +495,11 @@ section#sponsor {
 			float: left;
 			height: 3em;
 		}
-		#color-bar1 { background-color: $pink; }
-		#color-bar2 { background-color: $turquoise; }
-		#color-bar3 { background-color: $yellow; }
-		#color-bar4 { background-color: $green; }
-		#color-bar5 { background-color: $orange; }
+		#color-bar1 { background-color: $blue; }
+		#color-bar2 { background-color: $red; }
+		#color-bar3 { background-color: $turquoise; }
+		#color-bar4 { background-color: $orange; }
+		#color-bar5 { background-color: $green; }
   }
 }
 
@@ -530,7 +526,7 @@ section#sponsor {
 #dot {
     transition: color 0.5s ease;
     &:hover {
-        color: $yellow;
+        color: $orange;
         cursor: pointer;
     }
 }
