@@ -19,27 +19,24 @@ body {
 /*
  * shared classes
  */
-.montserrat, .montserrat-bold {
-  font-family: "Montserrat", sans-serif; }
+.source, .source-bold {
+  font-family: "Source Sans Pro", sans-serif; }
 
-.montserrat-bold {
+.source-bold {
   font-weight: 700; }
 
-.lato {
-  font-family: "Lato", sans-serif;
+.droid {
+  font-family: "Droid Sans", sans-serif;
   font-weight: 600; }
 
 .hidden {
   display: none; }
 
-.title {
-  text-transform: uppercase; }
-
 a {
-  color: #ffe86b; }
+  color: #FFCA28; }
 
 .black-shadow {
-  text-shadow: -2px 2px 0px #06447a; }
+  text-shadow: -2px 2px 0px #07457B; }
 
 /* Ben's stuff
  * temporarily
@@ -70,11 +67,11 @@ section input:focus {
 section .button {
   display: inline-block;
   margin: 15px auto 0px auto;
-  background-color: #ffe86b;
+  background-color: #FFCA28;
   padding: 0.8em 3em;
-  color: #f1645d;
+  color: #EF5350;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1em;
@@ -82,7 +79,7 @@ section .button {
   border: 0;
   cursor: pointer; }
 section .button:hover {
-  background-color: #4ecdc4;
+  background-color: #42A5F5;
   color: #ffffff; }
 
 section.ui.page.grid {
@@ -126,13 +123,13 @@ section#splash {
         line-height: 1.2em;
         font-size: 3em;
         font-size: 5.5vw;
-        color: #06447a; }
+        color: #07457B; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
         line-height: 1.2em;
         letter-spacing: 0;
         font-size: 1.4em;
-        color: #06447a;
+        color: #07457B;
         margin-bottom: 1em; }
         section#splash div.splash-container div.splash-banner h2.subtitle.large {
           display: block; }
@@ -147,7 +144,7 @@ section#splash {
       font-size: 5.5vw;
       margin: 0;
       letter-spacing: 8px;
-      color: #c9d41b; }
+      color: #9CCC65; }
     section#splash div.splash-text h2.title:focus {
       outline: 0px solid transparent; }
 
@@ -158,8 +155,8 @@ section#splash {
   width: 100%;
   z-index: 101; }
   #navbar .menu {
-    background-color: #06447a;
-    font-family: "Montserrat", sans-serif;
+    background-color: #07457B;
+    font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
     text-align: center;
@@ -174,16 +171,16 @@ section#splash {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
       color: #ffffff;
-      background: #06447a;
-      border-bottom: 3px solid #fc5454; }
+      background: #07457B;
+      border-bottom: 3px solid #EF5350; }
     #navbar .menu #goto-faq.item:hover {
       color: #ffffff;
-      background: #06447a;
-      border-bottom: 3px solid #4ecdc4; }
+      background: #07457B;
+      border-bottom: 3px solid #42A5F5; }
     #navbar .menu #goto-reg-now.item:hover {
       color: #ffffff;
-      background: #06447a;
-      border-bottom: 3px solid #ffe86b; }
+      background: #07457B;
+      border-bottom: 3px solid #FFCA28; }
 
 #navbar.fixed {
   position: fixed;
@@ -192,7 +189,7 @@ section#splash {
   z-index: 5; }
 
 #infobar {
-  background-color: #c9d41b;
+  background-color: #9CCC65;
   text-align: center; }
   #infobar p {
     color: #ffffff;
@@ -204,7 +201,7 @@ img#techx {
   width: 100px; }
 
 section#about {
-  background: #fc5454;
+  background: #EF5350;
   min-height: 240px;
   color: #ffffff;
   z-index: 4; }
@@ -212,38 +209,38 @@ section#about {
     padding-bottom: 5%; }
   section#about h2 {
     text-align: left; }
-  section#about p.lato {
+  section#about p.droid {
     text-align: left;
     font-size: 1.2em; }
 
 #social a {
   text-decoration: none;
-  color: #06447a;
+  color: #07457B;
   text-align: center;
   margin: 0;
   padding-left: 5px; }
 #social a:hover {
-  color: #06447a; }
+  color: #07457B; }
 #social .icon {
   font-size: 2em;
   text-align: center;
   margin: 0.8em 1em; }
 #social .icon:hover {
-  text-shadow: 0 0 3px #4ecdc4;
+  text-shadow: 0 0 3px #42A5F5;
   cursor: pointer; }
 #social a.social {
-  color: #06447a;
+  color: #07457B;
   text-decoration: none; }
 
 section#schedule {
-  background: #c9d41b;
+  background: #9CCC65;
   min-height: 80px;
   color: #ffffff; }
   section#schedule .schedule.grid {
     margin-top: 20px; }
 
 section#faq {
-  background: #4ecdc4;
+  background: #42A5F5;
   z-index: 4; }
   section#faq .column {
     text-align: left;
@@ -251,7 +248,7 @@ section#faq {
   section#faq .row {
     margin: 0 auto;
     border-radius: 4px;
-    background-color: #72d7d0; }
+    background-color: #6ebaf7; }
   section#faq h2 {
     color: #ffffff;
     text-align: left;
@@ -261,13 +258,13 @@ section#faq {
   section#faq h2.mobile {
     display: none; }
   section#faq .question {
-    color: #06447a;
+    color: #07457B;
     font-size: 1.5em; }
   section#faq p.answer {
-    color: #06447a; }
+    color: #07457B; }
 
 section#reg-now {
-  background: #ffe86b;
+  background: #FFCA28;
   min-height: 240px;
   color: #ffffff;
   z-index: 4; }
@@ -276,30 +273,30 @@ section#reg-now {
   section#reg-now .reg-now-form-cont {
     padding: 2em 2em;
     border-radius: 4px;
-    background-color: #c9d41b; }
+    background-color: #f4b800; }
     section#reg-now .reg-now-form-cont .thankyou {
       margin-top: 1em; }
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
-        background-color: #06447a;
+        background-color: #07457B;
         color: #ffffff;
         width: auto; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
-        background-color: #075292; }
+        background-color: #085393; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
-        background-color: #053662; }
+        background-color: #063763; }
 
 /** Final stuff **/
 section#sponsor {
   background: white;
-  color: #c9d41b; }
+  color: #9CCC65; }
   section#sponsor img {
     padding: 10px 10px; }
   section#sponsor p {
     margin-bottom: 5%; }
   section#sponsor #sponsor-email {
-    color: #c9d41b;
+    color: #9CCC65;
     text-decoration: underline; }
   section#sponsor .tier {
     padding: 0 5%; }
@@ -334,7 +331,7 @@ section#sponsor {
     width: 60%;
     margin: 0 auto; }
     #footer #footersplash h2 {
-      color: #06447a;
+      color: #07457B;
       text-transform: uppercase; }
   #footer #color-bars {
     padding-top: 2em; }
@@ -343,15 +340,15 @@ section#sponsor {
       float: left;
       height: 3em; }
     #footer #color-bars #color-bar1 {
-      background-color: #fc5454; }
+      background-color: #07457B; }
     #footer #color-bars #color-bar2 {
-      background-color: #4ecdc4; }
+      background-color: #EF5350; }
     #footer #color-bars #color-bar3 {
-      background-color: #ffe86b; }
+      background-color: #42A5F5; }
     #footer #color-bars #color-bar4 {
-      background-color: #c9d41b; }
+      background-color: #FFCA28; }
     #footer #color-bars #color-bar5 {
-      background-color: #ffbc29; }
+      background-color: #9CCC65; }
 
 /* hiding faq */
 .angle {
@@ -374,7 +371,7 @@ section#sponsor {
 #dot {
   transition: color 0.5s ease; }
   #dot:hover {
-    color: #ffe86b;
+    color: #FFCA28;
     cursor: pointer; }
 
 /* Responsive */
