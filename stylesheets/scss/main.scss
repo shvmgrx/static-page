@@ -53,7 +53,7 @@ a {
 }
 
 .black-shadow {
-	text-shadow: -2px 2px 0px $blue;
+	text-shadow: -2px 2px 0px $black;
 }
 
 /* Ben's stuff
@@ -222,7 +222,7 @@ section#splash {
   width: 100%;
   z-index: 101;
   .menu {
-    background-color: $blue;
+    background-color: $black;
     font-family: $source;
     text-transform: uppercase;
     font-size: 1em;
@@ -243,18 +243,18 @@ section#splash {
 
     #goto-about.item:hover {
       color: $white;
-      background: $blue;
-      border-bottom: 3px solid $red;
+      background: $black;
+      border-bottom: 3px solid $blue;
     }
     #goto-faq.item:hover {
       color: $white;
-      background: $blue;
-      border-bottom: 3px solid $turquoise;
+      background: $black;
+      border-bottom: 3px solid $silver;
     }
     #goto-reg-now.item:hover {
       color: $white;
-      background: $blue;
-      border-bottom: 3px solid $orange;
+      background: $black;
+      border-bottom: 3px solid $blue;
     }
   }
 }
@@ -283,7 +283,7 @@ img#techx {
 }
 
 section#about{
-  background: $red;
+  background: $blue;
   min-height: 240px;
   color: $white;
 	z-index: 4;
@@ -340,7 +340,7 @@ section#schedule {
 }
 
 section#faq {
-  background: $turquoise;
+  background: $white;
 	z-index: 4;
 
   .column {
@@ -350,10 +350,10 @@ section#faq {
   .row {
     margin: 0 auto;
 		border-radius: 4px;
-		background-color: lighten($turquoise, 9%);
+		background-color: darken($white, 10%);
   }
   h2 {
-    color:$white;
+    color:$blue;
     text-align: left;
     margin-bottom: 1em;
   }
@@ -373,7 +373,8 @@ section#faq {
 }
 
 section#reg-now {
-  background: $orange;
+  $reg-color: $blue;
+  background: $reg-color;
   min-height: 240px;
   color: $white;
 	z-index: 4;
@@ -385,7 +386,7 @@ section#reg-now {
 	.reg-now-form-cont {
 		padding: 2em 2em;
 		border-radius: 4px;
-		background-color: darken($orange, 10%);
+		background-color: lighten($reg-color, 10%);
 
     .thankyou {
       margin-top: 1em;
@@ -395,15 +396,15 @@ section#reg-now {
 			margin-top: 2em;
 
 			.ui.button {
-				background-color: $blue;
+				background-color: $black;
 				color: $white;
 				width: auto;
 			}
 			.ui.button:hover {
-				background-color: lighten($blue, 5%);
+				background-color: lighten($black, 5%);
 			}
 			.ui.button:active {
-				background-color: darken($blue, 5%);
+				background-color: darken($black, 5%);
 			}
 		}
 	}

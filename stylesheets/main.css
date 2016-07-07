@@ -36,7 +36,7 @@ a {
   color: #FFCA28; }
 
 .black-shadow {
-  text-shadow: -2px 2px 0px #07457B; }
+  text-shadow: -2px 2px 0px #000; }
 
 /* Ben's stuff
  * temporarily
@@ -155,7 +155,7 @@ section#splash {
   width: 100%;
   z-index: 101; }
   #navbar .menu {
-    background-color: #07457B;
+    background-color: #000;
     font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
@@ -171,16 +171,16 @@ section#splash {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
       color: #ffffff;
-      background: #07457B;
-      border-bottom: 3px solid #EF5350; }
+      background: #000;
+      border-bottom: 3px solid #07457B; }
     #navbar .menu #goto-faq.item:hover {
       color: #ffffff;
-      background: #07457B;
-      border-bottom: 3px solid #42A5F5; }
+      background: #000;
+      border-bottom: 3px solid #b4b4b4; }
     #navbar .menu #goto-reg-now.item:hover {
       color: #ffffff;
-      background: #07457B;
-      border-bottom: 3px solid #FFCA28; }
+      background: #000;
+      border-bottom: 3px solid #07457B; }
 
 #navbar.fixed {
   position: fixed;
@@ -201,7 +201,7 @@ img#techx {
   width: 100px; }
 
 section#about {
-  background: #EF5350;
+  background: #07457B;
   min-height: 240px;
   color: #ffffff;
   z-index: 4; }
@@ -240,7 +240,7 @@ section#schedule {
     margin-top: 20px; }
 
 section#faq {
-  background: #42A5F5;
+  background: #ffffff;
   z-index: 4; }
   section#faq .column {
     text-align: left;
@@ -248,9 +248,9 @@ section#faq {
   section#faq .row {
     margin: 0 auto;
     border-radius: 4px;
-    background-color: #6ebaf7; }
+    background-color: #e6e6e6; }
   section#faq h2 {
-    color: #ffffff;
+    color: #07457B;
     text-align: left;
     margin-bottom: 1em; }
   section#faq h2.large {
@@ -264,7 +264,7 @@ section#faq {
     color: #07457B; }
 
 section#reg-now {
-  background: #FFCA28;
+  background: #07457B;
   min-height: 240px;
   color: #ffffff;
   z-index: 4; }
@@ -273,19 +273,19 @@ section#reg-now {
   section#reg-now .reg-now-form-cont {
     padding: 2em 2em;
     border-radius: 4px;
-    background-color: #f4b800; }
+    background-color: #0a60ab; }
     section#reg-now .reg-now-form-cont .thankyou {
       margin-top: 1em; }
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
-        background-color: #07457B;
+        background-color: #000;
         color: #ffffff;
         width: auto; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
-        background-color: #085393; }
+        background-color: #0d0d0d; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
-        background-color: #063763; }
+        background-color: black; }
 
 /** Final stuff **/
 section#sponsor {
