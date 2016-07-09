@@ -533,5 +533,8 @@ section#sponsor {
     width: 20px; }
   section#footer #color-bars div {
     height: 1.5em; } }
+.jacobshack-map {
+  width: 100%;
+  height: 468px; }
 
 /*# sourceMappingURL=main.css.map */

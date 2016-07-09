@@ -323,22 +323,26 @@
   </section>
 
   <section id="footer">
-  <div id="footersplash">
-    <img src="assets/images/logo-outline.svg" alt="Footer image" />
-    <h2 class="source">Hackmit</h2>
-  </div>
-
-  <div class="ten wide column" id="social">
-    <a href="mailto:team@hackmit.org" class="social">
-      <i class="ui icon mail"></i>
-    </a>
-    <a href="https://twitter.com/hackmit" class="social">
-      <i class="ui icon twitter"></i>
-    </a>
-    <a href="https://www.facebook.com/HackMIT" class="social">
-      <i class="ui icon facebook"></i>
-    </a>
-  </div>
+    <div class="jacobshack-map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOeZZgvr-83WbdhKvBdtBzAzS1zpNUWp0&callback=init"
+    async defer></script>
+        <script>
+        var map,center =  {
+                    lat :53.1683441,
+                    lng: 8.6510992
+        },
+        init = function(){
+            map = new google.maps.Map(document.querySelector('.jacobshack-map'), {
+                center: center,
+                zoom : 16
+            });
+            var marker = new google.maps.Marker({
+                position: center,
+                map: map,
+                title: 'jacobsHack!'
+            });
+        }
+    </script>
 
 	<div id="color-bars">
 		<div id="color-bar1">&nbsp;</div>
