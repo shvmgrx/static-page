@@ -33,7 +33,7 @@ body {
   display: none; }
 
 a {
-  color: #FFCA28; }
+  color: #BE3B00; }
 
 .black-shadow {
   text-shadow: -2px 2px 0px #000; }
@@ -67,7 +67,7 @@ section input:focus {
 section .button {
   display: inline-block;
   margin: 15px auto 0px auto;
-  background-color: #FFCA28;
+  background-color: #BE3B00;
   padding: 0.8em 3em;
   color: #EF5350;
   font-weight: bold;
@@ -176,7 +176,7 @@ section#splash {
     #navbar .menu #goto-faq.item:hover {
       color: #ffffff;
       background: #000;
-      border-bottom: 3px solid #b4b4b4; }
+      border-bottom: 3px solid #E6E6E6; }
     #navbar .menu #goto-reg-now.item:hover {
       color: #ffffff;
       background: #000;
@@ -322,7 +322,7 @@ section#sponsor {
     width: 14%; }
 
 #footer {
-  background: #fffefa;
+  background: #ffffff;
   text-align: center;
   padding-top: 5%;
   z-index: 4; }
@@ -336,19 +336,15 @@ section#sponsor {
   #footer #color-bars {
     padding-top: 2em; }
     #footer #color-bars div {
-      width: 20%;
+      width: 33.33333%;
       float: left;
       height: 3em; }
     #footer #color-bars #color-bar1 {
-      background-color: #07457B; }
+      background-color: #E6E6E6; }
     #footer #color-bars #color-bar2 {
-      background-color: #EF5350; }
+      background-color: #07457B; }
     #footer #color-bars #color-bar3 {
-      background-color: #42A5F5; }
-    #footer #color-bars #color-bar4 {
-      background-color: #FFCA28; }
-    #footer #color-bars #color-bar5 {
-      background-color: #9CCC65; }
+      background-color: #BE3B00; }
 
 /* hiding faq */
 .angle {
@@ -371,7 +367,7 @@ section#sponsor {
 #dot {
   transition: color 0.5s ease; }
   #dot:hover {
-    color: #FFCA28;
+    color: #BE3B00;
     cursor: pointer; }
 
 /* Responsive */
