@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 0.85em; }
   html.foolsday *, body.foolsday * {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
@@ -38,10 +38,10 @@ body {
   display: none; }
 
 a {
-  color: #be3b00; }
+  color: #BE3B00; }
 
 .black-shadow {
-  text-shadow: -2px 2px 0px black; }
+  text-shadow: -2px 2px 0px #000; }
 
 /* Ben's stuff
  * temporarily
@@ -72,9 +72,9 @@ section input:focus {
 section .button {
   display: inline-block;
   margin: 15px auto 0px auto;
-  background-color: #be3b00;
+  background-color: #BE3B00;
   padding: 0.8em 3em;
-  color: #ef5350;
+  color: #EF5350;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
@@ -84,8 +84,8 @@ section .button {
   border: 0;
   cursor: pointer; }
 section .button:hover {
-  background-color: #42a5f5;
-  color: white; }
+  background-color: #42A5F5;
+  color: #ffffff; }
 
 section.ui.page.grid {
   min-width: 0; }
@@ -128,13 +128,13 @@ section#splash {
         line-height: 1.2em;
         font-size: 3em;
         font-size: 5.5vw;
-        color: #07457b; }
+        color: #07457B; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
         line-height: 1.2em;
         letter-spacing: 0;
         font-size: 1.4em;
-        color: #07457b;
+        color: #07457B;
         margin-bottom: 1em; }
         section#splash div.splash-container div.splash-banner h2.subtitle.large {
           display: block; }
@@ -149,7 +149,7 @@ section#splash {
       font-size: 5.5vw;
       margin: 0;
       letter-spacing: 8px;
-      color: #9ccc65; }
+      color: #9CCC65; }
     section#splash div.splash-text h2.title:focus {
       outline: 0px solid transparent; }
 
@@ -160,7 +160,7 @@ section#splash {
   width: 100%;
   z-index: 101; }
   #navbar .menu {
-    background-color: black;
+    background-color: #000;
     font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
@@ -170,22 +170,22 @@ section#splash {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
-      color: white;
+      color: #ffffff;
       font-weight: bold; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
-      color: white;
-      background: black;
-      border-bottom: 3px solid #07457b; }
+      color: #ffffff;
+      background: #000;
+      border-bottom: 3px solid #07457B; }
     #navbar .menu #goto-faq.item:hover {
-      color: white;
-      background: black;
-      border-bottom: 3px solid #e6e6e6; }
+      color: #ffffff;
+      background: #000;
+      border-bottom: 3px solid #E6E6E6; }
     #navbar .menu #goto-reg-now.item:hover {
-      color: white;
-      background: black;
-      border-bottom: 3px solid #07457b; }
+      color: #ffffff;
+      background: #000;
+      border-bottom: 3px solid #07457B; }
 
 #navbar.fixed {
   position: fixed;
@@ -194,10 +194,10 @@ section#splash {
   z-index: 5; }
 
 #infobar {
-  background-color: #9ccc65;
+  background-color: #9CCC65;
   text-align: center; }
   #infobar p {
-    color: white;
+    color: #ffffff;
     font-size: 1.2em;
     padding: 16px;
     margin: 0; }
@@ -206,9 +206,9 @@ img#techx {
   width: 100px; }
 
 section#about {
-  background: #07457b;
+  background: #07457B;
   min-height: 240px;
-  color: white;
+  color: #ffffff;
   z-index: 4; }
   section#about .ui.page.grid.padded {
     padding-bottom: 5%; }
@@ -220,32 +220,32 @@ section#about {
 
 #social a {
   text-decoration: none;
-  color: #07457b;
+  color: #07457B;
   text-align: center;
   margin: 0;
   padding-left: 5px; }
 #social a:hover {
-  color: #07457b; }
+  color: #07457B; }
 #social .icon {
   font-size: 2em;
   text-align: center;
   margin: 0.8em 1em; }
 #social .icon:hover {
-  text-shadow: 0 0 3px #42a5f5;
+  text-shadow: 0 0 3px #42A5F5;
   cursor: pointer; }
 #social a.social {
-  color: #07457b;
+  color: #07457B;
   text-decoration: none; }
 
 section#schedule {
-  background: #9ccc65;
+  background: #9CCC65;
   min-height: 80px;
-  color: white; }
+  color: #ffffff; }
   section#schedule .schedule.grid {
     margin-top: 20px; }
 
 section#faq {
-  background: white;
+  background: #ffffff;
   z-index: 4; }
   section#faq .column {
     text-align: left;
@@ -255,7 +255,7 @@ section#faq {
     border-radius: 4px;
     background-color: #e6e6e6; }
   section#faq h2 {
-    color: #07457b;
+    color: #07457B;
     text-align: left;
     margin-bottom: 1em; }
   section#faq h2.large {
@@ -263,15 +263,15 @@ section#faq {
   section#faq h2.mobile {
     display: none; }
   section#faq .question {
-    color: #07457b;
+    color: #07457B;
     font-size: 1.5em; }
   section#faq p.answer {
-    color: #07457b; }
+    color: #07457B; }
 
 section#reg-now {
-  background: #07457b;
+  background: #07457B;
   min-height: 240px;
-  color: white;
+  color: #ffffff;
   z-index: 4; }
   section#reg-now .ui.page.grid.padded {
     padding-bottom: 5%; }
@@ -284,8 +284,8 @@ section#reg-now {
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
-        background-color: black;
-        color: white;
+        background-color: #000;
+        color: #ffffff;
         width: auto; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
         background-color: #0d0d0d; }
@@ -295,13 +295,13 @@ section#reg-now {
 /** Final stuff **/
 section#sponsor {
   background: white;
-  color: #9ccc65; }
+  color: #9CCC65; }
   section#sponsor img {
     padding: 10px 10px; }
   section#sponsor p {
     margin-bottom: 5%; }
   section#sponsor #sponsor-email {
-    color: #9ccc65;
+    color: #9CCC65;
     text-decoration: underline; }
   section#sponsor .tier {
     padding: 0 5%; }
@@ -327,7 +327,7 @@ section#sponsor {
     width: 14%; }
 
 #footer {
-  background: white;
+  background: #ffffff;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -348,11 +348,11 @@ section#sponsor {
       float: left;
       height: 3em; }
     #footer #color-bars #color-bar1 {
-      background-color: #e6e6e6; }
+      background-color: #E6E6E6; }
     #footer #color-bars #color-bar2 {
-      background-color: #07457b; }
+      background-color: #07457B; }
     #footer #color-bars #color-bar3 {
-      background-color: #be3b00; }
+      background-color: #BE3B00; }
 
 /* hiding faq */
 .angle {
@@ -375,23 +375,35 @@ section#sponsor {
 #dot {
   transition: color 0.5s ease; }
   #dot:hover {
-    color: #be3b00;
+    color: #BE3B00;
     cursor: pointer; }
 
 /* Responsive */
-@media only screen and (max-width: 1000px) {
+/*@media only screen and (max-width: 1000px) {
+  section#faq {
+    h2.large {
+      display: none;
+    }
+    h2.mobile {
+      display: block;
+    }
+  }
+}*/
+@media only screen and (max-width: 1000px) and (min-width: 786px) {
+  /* Change font size on mobile devices */
   section#faq h2.large {
     display: none; }
   section#faq h2.mobile {
-    display: block; } }
-@media only screen and (max-width: 1000px) and (min-width: 768px) {
-  /* Control font size on mobile devices */
+    display: block; }
+
   section#about {
     padding-top: 2%;
     padding-bottom: 1%; }
     section#about h2 {
-      font-size: 3em;
-      margin-right: 5px; } }
+      font-size: 2.5em;
+      margin-right: 5px; }
+    section#about p.droid {
+      font-size: 1.5  em; } }
 @media only screen and (max-width: 786px) {
   html, body {
     font-size: 1em; }
@@ -480,7 +492,7 @@ section#sponsor {
     font-size: 2.8em; }
 
   section h2 {
-    font-size: 3em; }
+    font-size: 2.5em; }
 
   section#sponsor {
     padding-left: 0;
@@ -495,7 +507,15 @@ section#sponsor {
       width: 45%; }
     section#sponsor .bronze img {
       width: 25%; } }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) and (width: 320px) {
+  #navbar .menu .item {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    width: 5em;
+    font-size: 0.9em;
+    padding-right: 0.4em; }
+
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
     margin-top: 0; }
@@ -551,3 +571,5 @@ section#sponsor {
 .jacobshack-map {
   width: 100%;
   height: 468px; }
+
+/*# sourceMappingURL=main.css.map */

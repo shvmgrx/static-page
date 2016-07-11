@@ -537,7 +537,7 @@ section#sponsor {
 
 /* Responsive */
 
-@media only screen and (max-width: 1000px) {
+/*@media only screen and (max-width: 1000px) {
   section#faq {
     h2.large {
       display: none;
@@ -546,20 +546,33 @@ section#sponsor {
       display: block;
     }
   }
-}
+}*/
 
-@media only screen and (max-width: 1000px) and (min-width: 768px){
-  /* Control font size on mobile devices */
+@media only screen and (max-width: 1000px) and (min-width: 786px){
+  /* Change font size on mobile devices */
+
+  section#faq {
+    h2.large {
+      display: none;
+    }
+    h2.mobile {
+      display: block;
+    }
+  }
 
   section#about {
     padding-top: 2%;
     padding-bottom: 1%;
     h2 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-right: 5px;
+    }
+    p.droid{
+      font-size: 1.5  em;
     }
   }
 } 
+  
 
 @media only screen and (max-width: 786px) {
   html,body {
@@ -711,7 +724,7 @@ section#sponsor {
   }
 
   section h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   section#sponsor {
@@ -740,7 +753,20 @@ section#sponsor {
   }
 }
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px )  and (width: 320px){
+  #navbar{
+    .menu .item{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    width: 5em;
+    font-size: 0.9em;
+    padding-right: 0.4em;
+    
+  }  
+
+  } 
+
   section#splash {
 
     div.splash-container {
