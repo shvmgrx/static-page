@@ -125,3 +125,20 @@ function hideAnswers() {
     $('.angle').removeClass('angle-rotated');
   }
 }
+
+/* map configuration */
+var map,center =  {
+                    lat :53.1683441,
+                    lng: 8.6510992
+        },
+  init = function(){
+       map = new google.maps.Map(document.querySelector('.jacobshack-map'), {
+           center: center,
+           zoom : 16
+       });
+       var marker = new google.maps.Marker({
+           position: center,
+           map: map,
+           title: 'jacobsHack!'
+        });
+   }
