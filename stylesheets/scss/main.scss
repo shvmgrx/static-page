@@ -556,18 +556,19 @@ section#sponsor {
     }
   }
   section#splash {
+    
     div.splash-container {
-			display: block;
+      display: block;
 
       div.splash-banner {
         width: 100%;
-				margin-top: 2em;
-				margin-top: 5.5vh;
+            margin-top: 2em;
+            margin-top: 5.5vh;
 
-				.splash-logo-unit-cont {
-					transform: rotate(0deg);
-					text-align: center;
-				}
+            .splash-logo-unit-cont {
+                transform: rotate(0deg);
+                text-align: center;
+            }
 
   			.splash-img {
   				height: 60vh;
