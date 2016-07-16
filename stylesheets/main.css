@@ -163,8 +163,10 @@ section#splash div.splash-container div.splash-banner {
   margin: 0 auto 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-/* line 160, scss/main.scss */
+/* line 162, scss/main.scss */
 section#splash div.splash-container div.splash-banner img {
   /*
   background: url('../assets/images/jacobshack_logo.png') no-repeat center 0%;
@@ -176,7 +178,7 @@ section#splash div.splash-container div.splash-banner img {
   width: 100%;
   max-width: 768px;
 }
-/* line 174, scss/main.scss */
+/* line 176, scss/main.scss */
 section#splash div.splash-container div.splash-banner h1.title {
   margin: 0;
   letter-spacing: 8px;
@@ -185,7 +187,7 @@ section#splash div.splash-container div.splash-banner h1.title {
   font-size: 5.5vw;
   color: #07457B;
 }
-/* line 183, scss/main.scss */
+/* line 185, scss/main.scss */
 section#splash div.splash-container div.splash-banner h2.subtitle {
   margin: 0;
   line-height: 1.2em;
@@ -194,20 +196,20 @@ section#splash div.splash-container div.splash-banner h2.subtitle {
   color: #07457B;
   margin-bottom: 1em;
 }
-/* line 191, scss/main.scss */
+/* line 193, scss/main.scss */
 section#splash div.splash-container div.splash-banner h2.subtitle.large {
   display: block;
 }
-/* line 194, scss/main.scss */
+/* line 196, scss/main.scss */
 section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
   display: none;
 }
-/* line 201, scss/main.scss */
+/* line 203, scss/main.scss */
 section#splash div.splash-text {
   margin: 0 0 5px 0 !important;
   padding: 0 !important;
 }
-/* line 205, scss/main.scss */
+/* line 207, scss/main.scss */
 section#splash div.splash-text h2.title {
   line-height: 1.1em;
   font-size: 3em;
@@ -216,12 +218,12 @@ section#splash div.splash-text h2.title {
   letter-spacing: 8px;
   color: #9CCC65;
 }
-/* line 213, scss/main.scss */
+/* line 215, scss/main.scss */
 section#splash div.splash-text h2.title:focus {
   outline: 0px solid transparent;
 }
 
-/* line 219, scss/main.scss */
+/* line 221, scss/main.scss */
 #navbar {
   position: absolute;
   bottom: 0;
@@ -229,7 +231,7 @@ section#splash div.splash-text h2.title:focus {
   width: 100%;
   z-index: 101;
 }
-/* line 225, scss/main.scss */
+/* line 227, scss/main.scss */
 #navbar .menu {
   background-color: #000;
   font-family: "Source Sans Pro", sans-serif;
@@ -238,7 +240,7 @@ section#splash div.splash-text h2.title:focus {
   text-align: center;
   border: 0;
 }
-/* line 233, scss/main.scss */
+/* line 235, scss/main.scss */
 #navbar .menu .item {
   width: 8em;
   padding-top: 1.2em;
@@ -246,30 +248,30 @@ section#splash div.splash-text h2.title:focus {
   color: #ffffff;
   font-weight: bold;
 }
-/* line 240, scss/main.scss */
+/* line 242, scss/main.scss */
 #navbar .menu .item.wide {
   width: 9em;
 }
-/* line 245, scss/main.scss */
+/* line 247, scss/main.scss */
 #navbar .menu #goto-about.item:hover {
   color: #ffffff;
   background: #000;
   border-bottom: 3px solid #07457B;
 }
-/* line 250, scss/main.scss */
+/* line 252, scss/main.scss */
 #navbar .menu #goto-faq.item:hover {
   color: #ffffff;
   background: #000;
   border-bottom: 3px solid #E6E6E6;
 }
-/* line 255, scss/main.scss */
+/* line 257, scss/main.scss */
 #navbar .menu #goto-reg-now.item:hover {
   color: #ffffff;
   background: #000;
   border-bottom: 3px solid #07457B;
 }
 
-/* line 263, scss/main.scss */
+/* line 265, scss/main.scss */
 #navbar.fixed {
   position: fixed;
   top: 0;
@@ -277,12 +279,12 @@ section#splash div.splash-text h2.title:focus {
   z-index: 5;
 }
 
-/* line 270, scss/main.scss */
+/* line 272, scss/main.scss */
 #infobar {
   background-color: #9CCC65;
   text-align: center;
 }
-/* line 274, scss/main.scss */
+/* line 276, scss/main.scss */
 #infobar p {
   color: #ffffff;
   font-size: 1.2em;
@@ -290,33 +292,33 @@ section#splash div.splash-text h2.title:focus {
   margin: 0;
 }
 
-/* line 282, scss/main.scss */
+/* line 284, scss/main.scss */
 img#techx {
   width: 100px;
 }
 
-/* line 286, scss/main.scss */
+/* line 288, scss/main.scss */
 section#about {
   background: #07457B;
   min-height: 240px;
   color: #ffffff;
   z-index: 4;
 }
-/* line 292, scss/main.scss */
+/* line 294, scss/main.scss */
 section#about .ui.page.grid.padded {
   padding-bottom: 5%;
 }
-/* line 296, scss/main.scss */
+/* line 298, scss/main.scss */
 section#about h2 {
   text-align: left;
 }
-/* line 300, scss/main.scss */
+/* line 302, scss/main.scss */
 section#about p.droid {
   text-align: left;
   font-size: 1.2em;
 }
 
-/* line 307, scss/main.scss */
+/* line 309, scss/main.scss */
 #social a {
   text-decoration: none;
   color: #07457B;
@@ -324,179 +326,179 @@ section#about p.droid {
   margin: 0;
   padding-left: 5px;
 }
-/* line 314, scss/main.scss */
+/* line 316, scss/main.scss */
 #social a:hover {
   color: #07457B;
 }
-/* line 317, scss/main.scss */
+/* line 319, scss/main.scss */
 #social .icon {
   font-size: 2em;
   text-align: center;
   margin: 0.8em 1em;
 }
-/* line 323, scss/main.scss */
+/* line 325, scss/main.scss */
 #social .icon:hover {
   text-shadow: 0 0 3px #42A5F5;
   cursor: pointer;
 }
-/* line 328, scss/main.scss */
+/* line 330, scss/main.scss */
 #social a.social {
   color: #07457B;
   text-decoration: none;
 }
 
-/* line 334, scss/main.scss */
+/* line 336, scss/main.scss */
 section#schedule {
   background: #9CCC65;
   min-height: 80px;
   color: #ffffff;
 }
-/* line 338, scss/main.scss */
+/* line 340, scss/main.scss */
 section#schedule .schedule.grid {
   margin-top: 20px;
 }
 
-/* line 343, scss/main.scss */
+/* line 345, scss/main.scss */
 section#faq {
   background: #ffffff;
   z-index: 4;
 }
-/* line 347, scss/main.scss */
+/* line 349, scss/main.scss */
 section#faq .column {
   text-align: left;
   margin-bottom: 1.5em;
 }
-/* line 351, scss/main.scss */
+/* line 353, scss/main.scss */
 section#faq .row {
   margin: 0 auto;
   border-radius: 4px;
   background-color: #e6e6e6;
 }
-/* line 356, scss/main.scss */
+/* line 358, scss/main.scss */
 section#faq h2 {
   color: #07457B;
   text-align: left;
   margin-bottom: 1em;
 }
-/* line 361, scss/main.scss */
+/* line 363, scss/main.scss */
 section#faq h2.large {
   display: block;
 }
-/* line 364, scss/main.scss */
+/* line 366, scss/main.scss */
 section#faq h2.mobile {
   display: none;
 }
-/* line 367, scss/main.scss */
+/* line 369, scss/main.scss */
 section#faq .question {
   color: #07457B;
   font-size: 1.5em;
 }
-/* line 371, scss/main.scss */
+/* line 373, scss/main.scss */
 section#faq p.answer {
   color: #07457B;
 }
 
-/* line 376, scss/main.scss */
+/* line 378, scss/main.scss */
 section#reg-now {
   background: #07457B;
   min-height: 240px;
   color: #ffffff;
   z-index: 4;
 }
-/* line 383, scss/main.scss */
+/* line 385, scss/main.scss */
 section#reg-now .ui.page.grid.padded {
   padding-bottom: 5%;
 }
-/* line 387, scss/main.scss */
+/* line 389, scss/main.scss */
 section#reg-now .reg-now-form-cont {
   padding: 2em 2em;
   border-radius: 4px;
   background-color: #0a60ab;
 }
-/* line 392, scss/main.scss */
+/* line 394, scss/main.scss */
 section#reg-now .reg-now-form-cont .thankyou {
   margin-top: 1em;
 }
-/* line 396, scss/main.scss */
+/* line 398, scss/main.scss */
 section#reg-now .reg-now-form-cont .reg-now-form {
   margin-top: 2em;
 }
-/* line 399, scss/main.scss */
+/* line 401, scss/main.scss */
 section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
   background-color: #000;
   color: #ffffff;
   width: auto;
 }
-/* line 404, scss/main.scss */
+/* line 406, scss/main.scss */
 section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
   background-color: #0d0d0d;
 }
-/* line 407, scss/main.scss */
+/* line 409, scss/main.scss */
 section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
   background-color: black;
 }
 
 /** Final stuff **/
-/* line 417, scss/main.scss */
+/* line 419, scss/main.scss */
 section#sponsor {
   background: white;
   color: #9CCC65;
 }
-/* line 421, scss/main.scss */
+/* line 423, scss/main.scss */
 section#sponsor img {
   padding: 10px 10px;
 }
-/* line 425, scss/main.scss */
+/* line 427, scss/main.scss */
 section#sponsor p {
   margin-bottom: 5%;
 }
-/* line 429, scss/main.scss */
+/* line 431, scss/main.scss */
 section#sponsor #sponsor-email {
   color: #9CCC65;
   text-decoration: underline;
 }
-/* line 434, scss/main.scss */
+/* line 436, scss/main.scss */
 section#sponsor .tier {
   padding: 0 5%;
 }
-/* line 438, scss/main.scss */
+/* line 440, scss/main.scss */
 section#sponsor a, section#sponsor a:visited {
   text-decoration: none;
 }
-/* line 442, scss/main.scss */
+/* line 444, scss/main.scss */
 section#sponsor img {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
   margin: 16px;
 }
-/* line 449, scss/main.scss */
+/* line 451, scss/main.scss */
 section#sponsor .platinum img {
   width: 44%;
 }
-/* line 452, scss/main.scss */
+/* line 454, scss/main.scss */
 section#sponsor #aqr {
   width: 225px;
   height: auto;
 }
-/* line 457, scss/main.scss */
+/* line 459, scss/main.scss */
 section#sponsor .gold img {
   width: 27.5%;
 }
-/* line 461, scss/main.scss */
+/* line 463, scss/main.scss */
 section#sponsor .silver img {
   width: 18.5%;
 }
-/* line 465, scss/main.scss */
+/* line 467, scss/main.scss */
 section#sponsor .bronze {
   padding: 2% 5%;
 }
-/* line 469, scss/main.scss */
+/* line 471, scss/main.scss */
 section#sponsor .bronze img {
   width: 14%;
 }
 
-/* line 474, scss/main.scss */
+/* line 476, scss/main.scss */
 #footer {
   background: #ffffff;
   text-align: center;
@@ -505,7 +507,7 @@ section#sponsor .bronze img {
   /*padding-top: 0;*/
   z-index: 4;
 }
-/* line 482, scss/main.scss */
+/* line 484, scss/main.scss */
 #footer .jacobshack-map {
   position: relative;
   /*@extend .flex;*/
@@ -513,33 +515,33 @@ section#sponsor .bronze img {
   padding: 0;
   width: 100%;
 }
-/* line 493, scss/main.scss */
+/* line 495, scss/main.scss */
 #footer #color-bars {
   /*padding-top: 2em;*/
   margin: 0;
   padding: 0;
 }
-/* line 498, scss/main.scss */
+/* line 500, scss/main.scss */
 #footer #color-bars div {
   width: 33.33333%;
   float: left;
   height: 3em;
 }
-/* line 503, scss/main.scss */
+/* line 505, scss/main.scss */
 #footer #color-bars #color-bar1 {
   background-color: #E6E6E6;
 }
-/* line 504, scss/main.scss */
+/* line 506, scss/main.scss */
 #footer #color-bars #color-bar2 {
   background-color: #07457B;
 }
-/* line 505, scss/main.scss */
+/* line 507, scss/main.scss */
 #footer #color-bars #color-bar3 {
   background-color: #BE3B00;
 }
 
 /* hiding faq */
-/* line 511, scss/main.scss */
+/* line 513, scss/main.scss */
 .angle {
   display: none;
   -ms-transition: all 0.5s;
@@ -547,28 +549,28 @@ section#sponsor .bronze img {
   transition: all 0.5s;
 }
 
-/* line 517, scss/main.scss */
+/* line 519, scss/main.scss */
 .angle-rotated {
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
-/* line 522, scss/main.scss */
+/* line 524, scss/main.scss */
 .answer-hidden {
   display: none;
 }
 
-/* line 525, scss/main.scss */
+/* line 527, scss/main.scss */
 .question-hidden {
   margin: 0;
 }
 
-/* line 529, scss/main.scss */
+/* line 531, scss/main.scss */
 #dot {
   transition: color 0.5s ease;
 }
-/* line 531, scss/main.scss */
+/* line 533, scss/main.scss */
 #dot:hover {
   color: #BE3B00;
   cursor: pointer;
@@ -587,53 +589,53 @@ section#sponsor .bronze img {
 }*/
 @media only screen and (max-width: 1000px) and (min-width: 786px) {
   /* Change font size on mobile devices */
-  /* line 555, scss/main.scss */
+  /* line 557, scss/main.scss */
   section#faq h2.large {
     display: none;
   }
-  /* line 558, scss/main.scss */
+  /* line 560, scss/main.scss */
   section#faq h2.mobile {
     display: block;
   }
 
-  /* line 563, scss/main.scss */
+  /* line 565, scss/main.scss */
   section#about {
     padding-top: 2%;
     padding-bottom: 1%;
   }
-  /* line 566, scss/main.scss */
+  /* line 568, scss/main.scss */
   section#about h2 {
     font-size: 2.5em;
     margin-right: 5px;
   }
-  /* line 570, scss/main.scss */
+  /* line 572, scss/main.scss */
   section#about p.droid {
     font-size: 1.5  em;
   }
 }
 @media only screen and (max-width: 786px) {
-  /* line 578, scss/main.scss */
+  /* line 580, scss/main.scss */
   html, body {
     font-size: 1em;
   }
 
-  /* line 582, scss/main.scss */
+  /* line 584, scss/main.scss */
   #navbar .menu .item {
     width: 7em;
     padding-left: 0.4em;
     padding-right: 0.4em;
   }
 
-  /* line 589, scss/main.scss */
+  /* line 591, scss/main.scss */
   section#about h2 {
     font-size: 2em;
   }
 
-  /* line 596, scss/main.scss */
+  /* line 598, scss/main.scss */
   section#splash div.splash-container {
     display: block;
   }
-  /* line 599, scss/main.scss */
+  /* line 601, scss/main.scss */
   section#splash div.splash-container div.splash-banner {
     display: flex;
     justify-content: center;
@@ -642,36 +644,36 @@ section#sponsor .bronze img {
     margin-top: 2em;
     margin-top: 5.5vh;
   }
-  /* line 607, scss/main.scss */
+  /* line 609, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
     text-align: center;
   }
-  /* line 612, scss/main.scss */
+  /* line 614, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-img {
     height: 60vh;
     float: none;
   }
-  /* line 617, scss/main.scss */
+  /* line 619, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-col {
     float: none;
     width: 100%;
     display: block;
     text-align: center;
   }
-  /* line 624, scss/main.scss */
+  /* line 626, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-title-cont {
     margin-top: 0;
     width: 100%;
   }
-  /* line 629, scss/main.scss */
+  /* line 631, scss/main.scss */
   section#splash div.splash-container div.splash-banner h1.title {
     letter-spacing: 8px;
     letter-spacing: 1vh;
     font-size: 3em;
     font-size: 8vh;
   }
-  /* line 636, scss/main.scss */
+  /* line 638, scss/main.scss */
   section#splash div.splash-container div.splash-banner h2.subtitle {
     line-height: 1.2em;
     line-height: 3.2vh;
@@ -679,118 +681,118 @@ section#sponsor .bronze img {
     font-size: 1.4em;
     font-size: 3.7vh;
   }
-  /* line 643, scss/main.scss */
+  /* line 645, scss/main.scss */
   section#splash div.splash-container div.splash-banner h2.subtitle.date {
     margin-bottom: 0;
   }
 
-  /* line 651, scss/main.scss */
+  /* line 653, scss/main.scss */
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
   }
 
-  /* line 656, scss/main.scss */
+  /* line 658, scss/main.scss */
   .question {
     cursor: pointer;
   }
 
-  /* line 660, scss/main.scss */
+  /* line 662, scss/main.scss */
   #navbar.fixed {
     position: relative;
   }
 
-  /* line 664, scss/main.scss */
+  /* line 666, scss/main.scss */
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 668, scss/main.scss */
+  /* line 670, scss/main.scss */
   section#sponsor img {
     margin: 1.5em 2em;
   }
-  /* line 672, scss/main.scss */
+  /* line 674, scss/main.scss */
   section#sponsor .platinum img {
     width: 50%;
   }
-  /* line 676, scss/main.scss */
+  /* line 678, scss/main.scss */
   section#sponsor .gold img {
     width: 37%;
   }
-  /* line 680, scss/main.scss */
+  /* line 682, scss/main.scss */
   section#sponsor .silver img {
     width: 25%;
   }
-  /* line 684, scss/main.scss */
+  /* line 686, scss/main.scss */
   section#sponsor .bronze img {
     width: 15%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 695, scss/main.scss */
+  /* line 697, scss/main.scss */
   section#splash div.splash-container div.splash-banner {
     margin-top: 0;
   }
-  /* line 698, scss/main.scss */
+  /* line 700, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
     margin-top: 10vw;
   }
-  /* line 703, scss/main.scss */
+  /* line 705, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-img {
     transform: rotate(0deg);
     width: 90vw;
   }
-  /* line 708, scss/main.scss */
+  /* line 710, scss/main.scss */
   section#splash div.splash-container div.splash-banner .title {
     font-size: 2.8em !important;
   }
-  /* line 713, scss/main.scss */
+  /* line 715, scss/main.scss */
   section#splash div.splash-container div.splash-banner h2.subtitle.large {
     display: none;
   }
-  /* line 716, scss/main.scss */
+  /* line 718, scss/main.scss */
   section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
     display: block;
   }
-  /* line 723, scss/main.scss */
+  /* line 725, scss/main.scss */
   section#splash div.splash-container div.splash-text .title {
     font-size: 2.8em;
   }
 
-  /* line 730, scss/main.scss */
+  /* line 732, scss/main.scss */
   section h2 {
     font-size: 2.5em;
   }
 
-  /* line 734, scss/main.scss */
+  /* line 736, scss/main.scss */
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 738, scss/main.scss */
+  /* line 740, scss/main.scss */
   section#sponsor img {
     margin: 1em 2em;
   }
-  /* line 742, scss/main.scss */
+  /* line 744, scss/main.scss */
   section#sponsor .platinum img {
     width: 75%;
   }
-  /* line 746, scss/main.scss */
+  /* line 748, scss/main.scss */
   section#sponsor .gold img {
     width: 65%;
   }
-  /* line 750, scss/main.scss */
+  /* line 752, scss/main.scss */
   section#sponsor .silver img {
     width: 45%;
   }
-  /* line 754, scss/main.scss */
+  /* line 756, scss/main.scss */
   section#sponsor .bronze img {
     width: 25%;
   }
 }
 @media only screen and (max-width: 320px) and (width: 320px) {
-  /* line 762, scss/main.scss */
+  /* line 764, scss/main.scss */
   #navbar .menu .item {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -800,98 +802,98 @@ section#sponsor .bronze img {
     padding-right: 0.4em;
   }
 
-  /* line 779, scss/main.scss */
+  /* line 781, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
     margin-top: 0;
   }
-  /* line 784, scss/main.scss */
+  /* line 786, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-img {
     transform: rotate(0deg);
     width: auto;
     height: auto;
   }
-  /* line 790, scss/main.scss */
+  /* line 792, scss/main.scss */
   section#splash div.splash-container div.splash-banner .title {
     font-size: 2.5em !important;
   }
-  /* line 796, scss/main.scss */
+  /* line 798, scss/main.scss */
   section#splash div.splash-container div.splash-text .title {
     font-size: 2.5em;
   }
 
-  /* line 803, scss/main.scss */
+  /* line 805, scss/main.scss */
   section.ui.page.grid.padded {
     padding-top: 20%;
     padding-bottom: 20%;
   }
 
-  /* line 807, scss/main.scss */
+  /* line 809, scss/main.scss */
   section input {
     margin: 2px auto;
   }
 
-  /* line 810, scss/main.scss */
+  /* line 812, scss/main.scss */
   section h2 {
     font-size: 2em;
     line-height: 1.2em;
   }
 
-  /* line 814, scss/main.scss */
+  /* line 816, scss/main.scss */
   section#faq .question {
     font-size: 1.3em;
   }
 
-  /* line 818, scss/main.scss */
+  /* line 820, scss/main.scss */
   section#splash div.splash-container {
     padding-bottom: 0em;
     display: block;
   }
-  /* line 823, scss/main.scss */
+  /* line 825, scss/main.scss */
   section#splash div.splash-container div.splash-banner h1.title {
     font-size: 1.5em;
   }
-  /* line 829, scss/main.scss */
+  /* line 831, scss/main.scss */
   section#splash div.splash-text h2.title {
     font-size: 1.5em;
   }
 
-  /* line 835, scss/main.scss */
+  /* line 837, scss/main.scss */
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 839, scss/main.scss */
+  /* line 841, scss/main.scss */
   section#sponsor img {
     margin: 1em;
   }
-  /* line 843, scss/main.scss */
+  /* line 845, scss/main.scss */
   section#sponsor .platinum img {
     width: 75%;
   }
-  /* line 847, scss/main.scss */
+  /* line 849, scss/main.scss */
   section#sponsor .gold img {
     width: 65%;
   }
-  /* line 851, scss/main.scss */
+  /* line 853, scss/main.scss */
   section#sponsor .silver img {
     width: 45%;
   }
-  /* line 855, scss/main.scss */
+  /* line 857, scss/main.scss */
   section#sponsor .bronze img {
     width: 30%;
   }
 
-  /* line 861, scss/main.scss */
+  /* line 863, scss/main.scss */
   section#footer .icon {
     width: 20px;
   }
-  /* line 865, scss/main.scss */
+  /* line 867, scss/main.scss */
   section#footer #color-bars div {
     height: 1.5em;
   }
 }
-/* line 871, scss/main.scss */
+/* line 873, scss/main.scss */
 .jacobshack-map {
   width: 100%;
   height: 468px;
