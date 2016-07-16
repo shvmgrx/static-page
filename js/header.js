@@ -2,6 +2,8 @@
  * Created by leonhard on 12/07/16.
  */
 $(document).ready(function() {
+    return;
+
     if($(window).width() < 768 || $(window).height() < 384)
         return;
 
