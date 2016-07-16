@@ -1,3 +1,8 @@
+.flex {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -324,17 +329,20 @@ section#sponsor {
 #footer {
   background: #ffffff;
   text-align: center;
-  padding-top: 5%;
+  margin: 0;
+  padding: 0;
+  /*padding-top: 0;*/
   z-index: 4; }
-  #footer #footersplash {
-    max-width: 300px;
-    width: 60%;
-    margin: 0 auto; }
-    #footer #footersplash h2 {
-      color: #07457B;
-      text-transform: uppercase; }
+  #footer .jacobshack-map {
+    position: relative;
+    /*@extend .flex;*/
+    margin: 0;
+    padding: 0;
+    width: 100%; }
   #footer #color-bars {
-    padding-top: 2em; }
+    /*padding-top: 2em;*/
+    margin: 0;
+    padding: 0; }
     #footer #color-bars div {
       width: 33.33333%;
       float: left;
@@ -371,11 +379,31 @@ section#sponsor {
     cursor: pointer; }
 
 /* Responsive */
-@media only screen and (max-width: 1000px) {
+/*@media only screen and (max-width: 1000px) {
+  section#faq {
+    h2.large {
+      display: none;
+    }
+    h2.mobile {
+      display: block;
+    }
+  }
+}*/
+@media only screen and (max-width: 1000px) and (min-width: 786px) {
+  /* Change font size on mobile devices */
   section#faq h2.large {
     display: none; }
   section#faq h2.mobile {
-    display: block; } }
+    display: block; }
+
+  section#about {
+    padding-top: 2%;
+    padding-bottom: 1%; }
+    section#about h2 {
+      font-size: 2.5em;
+      margin-right: 5px; }
+    section#about p.droid {
+      font-size: 1.5  em; } }
 @media only screen and (max-width: 786px) {
   html, body {
     font-size: 1em; }
@@ -384,6 +412,9 @@ section#sponsor {
     width: 7em;
     padding-left: 0.4em;
     padding-right: 0.4em; }
+
+  section#about h2 {
+    font-size: 2em; }
 
   section#splash div.splash-container {
     display: block; }
@@ -461,7 +492,7 @@ section#sponsor {
     font-size: 2.8em; }
 
   section h2 {
-    font-size: 3em; }
+    font-size: 2.5em; }
 
   section#sponsor {
     padding-left: 0;
@@ -476,7 +507,15 @@ section#sponsor {
       width: 45%; }
     section#sponsor .bronze img {
       width: 25%; } }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) and (width: 320px) {
+  #navbar .menu .item {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    width: 5em;
+    font-size: 0.9em;
+    padding-right: 0.4em; }
+
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
     margin-top: 0; }

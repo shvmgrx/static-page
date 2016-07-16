@@ -121,19 +121,23 @@
                                                                                                                                                                                                                                                                                                                                                                              
 -->
 <head lang="en">
-  <title>jacobsHack! 2016</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>jacobsHack! 2016</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
   <link rel="icon" type="image/ico" href="favicon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic|Source+Code+Pro:400,500|Droid+Sans:400,700" rel="stylesheet" type="text/css">
 
 
-  <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
 
-  <script src="js/main.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/Matter/build/matter.min.js"></script>
+    <script src="js/decomp.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
 
   <!-- Include Semantic-UI -->
   <link href="bower_components/semantic-ui/build/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
@@ -306,12 +310,19 @@
         Thanks for signing up! We'll send you an email when registration opens.
       </div>
 
-      <form class="reg-now-form" onsubmit="">
+      <form class="reg-now-form"
+            action="https://jacobshack.us8.list-manage.com/subscribe/post?u=98f396a0be77e1f91596a7696&id=55558cc4a0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+            novalidate
+            role="form">
+
 				<div class="ui input">
-					<input
-            id="reg-now-form-email"
-            type="text" name="email"
-            placeholder="your_email@school.edu">
+					<input id="reg-now-form-email"
+                           type="text" name="email"
+                           placeholder="your_email@your.university">
 				</div>
 				<input type="submit" class="ui button" value="Submit">
 			</form>
@@ -324,35 +335,6 @@
     <div class="jacobshack-map"></div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOeZZgvr-83WbdhKvBdtBzAzS1zpNUWp0&callback=init"
     async defer></script>
-        <script>
-        var map,center =  {
-                    lat :53.1683441,
-                    lng: 8.6510992
-        },
-        init = function(){
-            map = new google.maps.Map(document.querySelector('.jacobshack-map'), {
-                center: center,
-                zoom : 16
-            });
-            var marker = new google.maps.Marker({
-                position: center,
-                map: map,
-                title: 'jacobsHack!'
-            });
-        }
-    </script>
-
-  <div class="ten wide column" id="social">
-    <a href="mailto:team@jacobshack.com" class="social">
-      <i class="ui icon mail"></i>
-    </a>
-    <a href="https://twitter.com/jacobs_hack" class="social">
-      <i class="ui icon twitter"></i>
-    </a>
-    <a href="https://www.facebook.com/jacobshack.bremen" class="social">
-      <i class="ui icon facebook"></i>
-    </a>
-  </div>
 
 	<div id="color-bars">
 		<div id="color-bar1">&nbsp;</div>
