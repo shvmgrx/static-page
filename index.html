@@ -134,6 +134,8 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/Matter/build/matter.min.js"></script>
+    <script src="js/decomp.js"></script>
+
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
 
@@ -312,12 +314,19 @@
         Thanks for signing up! We'll send you an email when registration opens.
       </div>
 
-      <form class="reg-now-form" onsubmit="">
+      <form class="reg-now-form"
+            action="https://jacobshack.us8.list-manage.com/subscribe/post?u=98f396a0be77e1f91596a7696&id=55558cc4a0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+            novalidate
+            role="form">
+
 				<div class="ui input">
-					<input
-            id="reg-now-form-email"
-            type="text" name="email"
-            placeholder="your_email@school.edu">
+					<input id="reg-now-form-email"
+                           type="text" name="email"
+                           placeholder="your_email@your.university">
 				</div>
 				<input type="submit" class="ui button" value="Submit">
 			</form>
