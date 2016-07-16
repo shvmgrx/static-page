@@ -167,7 +167,7 @@ section#splash {
 
         margin-top: 3.5em;
 
-        width: 75%;
+        width: 100%;
         max-width: 768px;
       }
 
@@ -597,6 +597,9 @@ section#sponsor {
       display: block;
 
       div.splash-banner {
+      	display: flex;
+      	justify-content: center;
+      	align-items: center;
         width: 100%;
             margin-top: 2em;
             margin-top: 5.5vh;
