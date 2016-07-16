@@ -471,7 +471,7 @@ section#sponsor {
 }
 
 #footer {
-  background: $offwhite;
+  background: $white;
   text-align: center;
   padding-top: 5%;
 	z-index: 4;
@@ -492,15 +492,13 @@ section#sponsor {
 		padding-top: 2em;
 
 		div {
-			width: 20%;
+			width: (1 / 3) * 100%;
 			float: left;
 			height: 3em;
 		}
-		#color-bar1 { background-color: $blue; }
-		#color-bar2 { background-color: $red; }
-		#color-bar3 { background-color: $turquoise; }
-		#color-bar4 { background-color: $orange; }
-		#color-bar5 { background-color: $green; }
+		#color-bar1 { background-color: $silver; }
+		#color-bar2 { background-color: $blue; }
+		#color-bar3 { background-color: $orange; }
   }
 }
 
@@ -816,4 +814,8 @@ section#sponsor {
       }
     }
   }
+}
+.jacobshack-map{
+  width: 100%;
+  height:   468px;
 }
