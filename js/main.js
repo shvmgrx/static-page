@@ -27,34 +27,40 @@ $(document).ready(function() {
 
   hideAnswers();
 
-  $('form').on('submit', function(e){
-    e.preventDefault();
 
-    var is_valid_email = function(email) { return (/^.+@.+\..+$/).test(email); };
-    // ^^ Yes, this is easy to break. If you're reading this you're probably smart enough to find a way around it
-    // but there are a thousand other ways to do malicious things so its not worth our time to stop you :)
-    var emailTag = $('#reg-now-form-email');
-    var email = emailTag.val();
-    console.log(email);
-    if (is_valid_email(email)) {
-      emailTag.val('');
-      $.ajax({
-        dataType: 'jsonp',
-        url: window.location.protocol + '//getsimpleform.com/messages/ajax?form_api_token=2933d4eed6567f30071904ed66a75ff9',
-        data: {
-          email: email
+  // Adapted from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
+  // I only have one form on the page but you can be more specific if need be.
+  var $form = $('form');
+
+  if ( $form.length > 0 ) {
+    $('form button[type="submit"]').bind('click', function ( event ) {
+      if ( event ) event.preventDefault();
+      register($form);
+    });
+  }
+
+  function register($form) {
+    $('#reg-email-label').slideUp();
+    $.ajax({
+      method: 'POST',
+      url: $form.attr('action'),
+      data: $form.serialize(),
+      cache       : false,
+      dataType    : 'json',
+      contentType : "application/json; charset=utf-8",
+      error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+      success     : function(data) {
+        $('#reg-email-label').text(data.msg);
+        if (data.result != "success") {
+          // Something went wrong, do something to notify the user. maybe alert(data.msg);
+          $('#reg-email-label').addClass('red basic').slideDown();
+        } else {
+          $('#reg-button').hide();
+          $('#reg-email-label').removeClass('red basic').slideDown();
         }
-      });
-
-      $('form').animate({height: 'hide'}, 500, function() {
-        $('.thankyou').animate({height: 'show'}, 500);
-      });
-
-    } else {
-      // :(
-    }
-    return false;
-  });
+      }
+    });
+  }
 
   //code for hiding answers
   $('.question').on('click', function() {
