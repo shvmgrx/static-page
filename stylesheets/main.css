@@ -135,6 +135,7 @@ section#splash {
         margin: 0;
         line-height: 1.2em;
         letter-spacing: 0;
+        text-align: center;
         font-size: 1.4em;
         font-family: "Source Code Pro", serif;
         color: #07457B;
@@ -143,6 +144,9 @@ section#splash {
           display: block; }
         section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
           display: none; }
+        section#splash div.splash-container div.splash-banner h2.subtitle a {
+          color: inherit;
+          cursor: pointer; }
   section#splash div.splash-text {
     margin: 0 0 5px 0 !important;
     padding: 0 !important; }

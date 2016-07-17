@@ -186,6 +186,8 @@ section#splash {
         margin: 0;
         line-height: 1.2em;
         letter-spacing: 0;
+        text-align: center;
+
         font-size: 1.4em;
         font-family: "Source Code Pro", serif;
         color: $blue;
@@ -197,6 +199,11 @@ section#splash {
 				&.mobile {
 					display: none;
 				}
+
+        a {
+          color: inherit;
+          cursor: pointer;
+        }
       }
     }
   }
