@@ -134,7 +134,8 @@ var map,center =  {
   init = function(){
        map = new google.maps.Map(document.querySelector('.jacobshack-map'), {
            center: center,
-           zoom : 16
+           zoom : 16,
+           scrollwheel: false,
        });
        var marker = new google.maps.Marker({
            position: center,
