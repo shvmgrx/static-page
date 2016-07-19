@@ -929,8 +929,12 @@ section#team div#image_grid div.image_container img {
 section#team div#image_grid div.image_container div {
   display: none;
 }
-/* line 906, scss/main.scss */
-section#team div#image_grid div.image_container:hover div {
+/* line 905, scss/main.scss */
+section#team div#image_grid a {
+  color: #07457B;
+}
+/* line 908, scss/main.scss */
+section#team div#image_grid a div.image_container:hover div {
   display: flex;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -942,8 +946,8 @@ section#team div#image_grid div.image_container:hover div {
   justify-content: center;
   align-items: center;
 }
-/* line 916, scss/main.scss */
-section#team div#image_grid div.image_container:hover div span {
+/* line 918, scss/main.scss */
+section#team div#image_grid a div.image_container:hover div span {
   display: flex;
   justify-content: center;
   align-items: center;
