@@ -343,15 +343,18 @@
         Thanks for signing up! We'll send you an email when registration opens.
       </div>
 
-      <form action="https://jacobshack.us8.list-manage.com/subscribe/post?u=98f396a0be77e1f91596a7696&amp;id=55558cc4a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" role="form" class="ui form">
+      <form action="https://jacobshack.us8.list-manage.com/subscribe/post-json?u=98f396a0be77e1f91596a7696&amp;id=55558cc4a0&c=?" method="GET" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" role="form" class="ui form">
           <div class="field">
             <label for="mce-EMAIL" class="hidden" style="color:#ffffff">Email</label>
             <input id="mce-EMAIL" name="EMAIL" placeholder="mail@your.university" type="email" class="form-control" />
+            <div id="reg-email-label" style="display: none;" class="ui pointing red basic label">
+              You done fucked up
+            </div>
           </div>
 
           <input class="hidden" type="text" name="b_98f396a0be77e1f91596a7696_55558cc4a0" tabindex="-1" value="" />
 
-          <button type="submit" class="ui button">Subscribe for Updates</button>
+          <button id="reg-button" type="submit" class="ui button">Subscribe for Updates</button>
       </form>
 
     </div>
