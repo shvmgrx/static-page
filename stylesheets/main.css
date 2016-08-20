@@ -448,8 +448,8 @@ section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
 /** Final stuff **/
 /* line 427, scss/main.scss */
 section#sponsor {
-  background: white;
-  color: #9CCC65;
+  background: #E6E6E6;
+  color: #07457B;
 }
 /* line 431, scss/main.scss */
 section#sponsor img {
@@ -461,7 +461,7 @@ section#sponsor p {
 }
 /* line 439, scss/main.scss */
 section#sponsor #sponsor-email {
-  color: #9CCC65;
+  color: #07457B;
   text-decoration: underline;
 }
 /* line 444, scss/main.scss */
