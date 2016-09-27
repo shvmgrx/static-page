@@ -1,0 +1,6 @@
+/* line 1, scss/extends.scss */
+.flex {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+}
