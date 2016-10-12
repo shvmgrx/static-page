@@ -56,14 +56,14 @@ $(document).ready(function() {
       {file: "jake.png", amount: canvasWidth / 512, width: 150, height: 246},
       {file: "logo.ico", amount: canvasWidth / 64, circle: true, radius: 32},
 
-      {file: "amazon.png", amount: 1, width: 200, height: 44},
+      {file: "amazon.png", amount: 1, width: 400, height: 88},
       {file: "bloomberg.png", amount: 1, width: 200, height: 40},
       {file: "cliqz.png", amount: 1, width: 200, height: 51},
-      {file: "gsa.png", amount: 1, width: 180, height: 78},
+      {file: "gsa.png", amount: 1, width: 140, height: 61},
       {file: "hackharassment.png", amount: 1, width: 86, height: 37},
-      {file: "mlh.png", amount: 1, width: 280, height: 62},
+      {file: "mlh.png", amount: canvasWidth / 256, width: 280, height: 62},
       {file: "skyscanner.png", amount: 1, width: 516, height: 89},
-      {file: "twilio.png", amount: 1, width: 200, height: 60},
+      {file: "twilio.png", amount: 1, width: 275, height: 83},
       {file: "yelp.png", amount: 1, width: 200, height: 101},
 
     ]
@@ -84,7 +84,10 @@ $(document).ready(function() {
           var position = position_func();
           if(object.circle) {
             bodies.push(
-              Bodies.circle(position.x, position.y, object.radius, {
+              Bodies.circle(
+                Math.min(position.x, canvasWidth - object.radius * 2),
+                Math.min(position.y, canvasHeight - object.radius * 2),
+                object.radius, {
                 mass: 1, restitution: 0.2,
                 render: {
                     sprite: {
@@ -98,16 +101,21 @@ $(document).ready(function() {
             );
           } else {
             bodies.push(
-              Bodies.rectangle(position.x, position.y, object.width, object.height, {
-                mass: 1, restitution: 0.5,
-                render: {
-                  sprite: {
-                    texture: spriteFolder + object.file,
-                    xScale: 1,
-                    yScale: 1
+              Bodies.rectangle(
+                Math.min(position.x, canvasWidth - object.width),
+                Math.min(position.y, canvasHeight - object.height),
+                object.width,
+                object.height,
+                {
+                  mass: 1, restitution: 0.5,
+                  render: {
+                    sprite: {
+                      texture: spriteFolder + object.file,
+                      xScale: 1,
+                      yScale: 1
+                    }
                   }
-                }
-              })
+                })
             );
           }
         }
@@ -145,4 +153,8 @@ $(document).ready(function() {
 
     // run the renderer
     Render.run(render);
+
+    setTimeout(function() {
+      engine.world.gravity.y = 1;
+    }, 2000);
 });
