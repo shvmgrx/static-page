@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     var objects = [];
 
-    var spriteFolder = "/assets/images/sprites/"
+    var spriteFolder = "assets/images/sprites/"
 
     var objectTemplates = [
       {file: "jacobshack.png", amount: canvasWidth / 512, width: 280, height: 62},
