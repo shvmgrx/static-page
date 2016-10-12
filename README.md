@@ -7,7 +7,7 @@ Atribution
 This project is based on the HackMIT landing page.
 `https://github.com/techx/hackmit-splash`
 
-The `master` branch will be deployed at https://2016.jacobshack.com once it's ready.
+The `master` branch is deployed at https://2016.jacobshack.com.
 
 
 Testing

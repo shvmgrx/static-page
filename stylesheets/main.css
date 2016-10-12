@@ -460,38 +460,64 @@ section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
 /** Final stuff **/
 /* line 437, scss/main.scss */
 section#sponsor {
-  background: white;
-  color: #9CCC65; }
-  section#sponsor img {
-    padding: 10px 10px; }
-  section#sponsor p {
-    margin-bottom: 5%; }
-  section#sponsor #sponsor-email {
-    color: #9CCC65;
-    text-decoration: underline; }
-  section#sponsor .tier {
-    padding: 0 5%; }
-  section#sponsor a, section#sponsor a:visited {
-    text-decoration: none; }
-  section#sponsor img {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 16px; }
-  section#sponsor .platinum img {
-    width: 44%; }
-  section#sponsor #aqr {
-    width: 225px;
-    height: auto; }
-  section#sponsor .gold img {
-    width: 27.5%; }
-  section#sponsor .silver img {
-    width: 18.5%; }
-  section#sponsor .bronze {
-    padding: 2% 5%; }
-  section#sponsor .bronze img {
-    width: 14%; }
+  background: #E6E6E6;
+  color: #07457B;
+}
+/* line 431, scss/main.scss */
+section#sponsor img {
+  padding: 10px 10px;
+}
+/* line 435, scss/main.scss */
+section#sponsor p {
+  margin-bottom: 5%;
+}
+/* line 439, scss/main.scss */
+section#sponsor #sponsor-email {
+  color: #07457B;
+  text-decoration: underline;
+}
+/* line 444, scss/main.scss */
+section#sponsor .tier {
+  padding: 0 5%;
+}
+/* line 448, scss/main.scss */
+section#sponsor a, section#sponsor a:visited {
+  text-decoration: none;
+}
+/* line 452, scss/main.scss */
+section#sponsor img {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 16px;
+}
+/* line 459, scss/main.scss */
+section#sponsor .platinum img {
+  width: 44%;
+}
+/* line 462, scss/main.scss */
+section#sponsor #aqr {
+  width: 225px;
+  height: auto;
+}
+/* line 467, scss/main.scss */
+section#sponsor .gold img {
+  width: 27.5%;
+}
+/* line 471, scss/main.scss */
+section#sponsor .silver img {
+  width: 18.5%;
+}
+/* line 475, scss/main.scss */
+section#sponsor .bronze {
+  padding: 2% 5%;
+}
+/* line 479, scss/main.scss */
+section#sponsor .bronze img {
+  width: 14%;
+}
 
+/* line 484, scss/main.scss */
 #footer {
   background: #ffffff;
   text-align: center;
