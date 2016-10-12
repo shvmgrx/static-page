@@ -1,74 +1,113 @@
+/* line 1, scss/extends.scss */
 .flex {
   display: flex;
   -webkit-display: flex;
-  -moz-display: flex; }
+  -moz-display: flex;
+}
 
+/* line 4, scss/main.scss */
 html, body {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
   background-color: #ffffff;
-  font-size: 0.85em; }
-  html.foolsday *, body.foolsday * {
-    font-family: "Comic Sans MS", cursive, sans-serif !important; }
-  html section, body section {
-    width: 100%;
-    position: relative; }
-  html div, body div {
-    position: relative; }
+  font-size: 0.85em;
+}
+/* line 12, scss/main.scss */
+html.foolsday *, body.foolsday * {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+/* line 16, scss/main.scss */
+html section, body section {
+  width: 100%;
+  position: relative;
+}
+/* line 21, scss/main.scss */
+html div, body div {
+  position: relative;
+}
 
+/* line 26, scss/main.scss */
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 /*
  * shared classes
  */
+/* line 35, scss/main.scss */
 .source, .source-bold {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+}
 
+/* line 39, scss/main.scss */
 .source-bold {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
+/* line 43, scss/main.scss */
 .droid {
   font-family: "Droid Sans", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
+/* line 48, scss/main.scss */
 .hidden {
-  display: none; }
+  display: none;
+}
 
+/* line 52, scss/main.scss */
 a {
-  color: #BE3B00; }
+  color: #BE3B00;
+}
 
+/* line 56, scss/main.scss */
 .black-shadow {
-  text-shadow: -2px 2px 0px #000; }
+  text-shadow: -2px 2px 0px #000;
+}
 
 /* Ben's stuff
  * temporarily
  */
+/* line 66, scss/main.scss */
 section h2 {
   font-size: 3.5em;
   letter-spacing: 5px;
   line-height: 1.3em;
-  margin: 0; }
+  margin: 0;
+}
+/* line 73, scss/main.scss */
 section p,
 section label,
 section input {
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto;
-  display: block; }
+  display: block;
+}
+/* line 82, scss/main.scss */
 section p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
+/* line 86, scss/main.scss */
 section .row {
-  margin-top: 0; }
+  margin-top: 0;
+}
+/* line 90, scss/main.scss */
 section img {
-  max-width: 100%; }
+  max-width: 100%;
+}
+/* line 94, scss/main.scss */
 section input {
   padding: 10px 2%;
-  width: 80%; }
+  width: 80%;
+}
+/* line 99, scss/main.scss */
 section input:focus {
-  outline: 0; }
+  outline: 0;
+}
+/* line 103, scss/main.scss */
 section .button {
   display: inline-block;
   margin: 15px auto 0px auto;
@@ -82,224 +121,344 @@ section .button {
   font-size: 1em;
   text-align: center;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+}
+/* line 120, scss/main.scss */
 section .button:hover {
   background-color: #42A5F5;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 126, scss/main.scss */
 section.ui.page.grid {
-  min-width: 0; }
+  min-width: 0;
+}
 
+/* line 129, scss/main.scss */
 section.ui.page.grid.padded {
   padding-top: 5%;
-  padding-bottom: 7%; }
+  padding-bottom: 7%;
+}
 
+/* line 135, scss/main.scss */
 section#splash {
   display: table;
   table-layout: fixed;
   height: inherit;
-  width: 100%; }
-  section#splash div.splash-container {
-    font-size: 1em;
-    display: table-cell;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding-bottom: 3.5em; }
-    section#splash div.splash-container div.splash-banner {
-      width: 100%;
-      height: inherit;
-      margin: 0 auto 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
-      section#splash div.splash-container div.splash-banner img {
-        /*
-        background: url('../assets/images/jacobshack_logo.png') no-repeat center 0%;
-        background-size: contain;
-        */
-        display: flex;
-        align-self: flex-start;
-        margin-top: 3.5em;
-        width: 100%;
-        max-width: 768px; }
-      section#splash div.splash-container div.splash-banner h1.title {
-        margin: 0;
-        letter-spacing: 8px;
-        line-height: 1.2em;
-        font-size: 3em;
-        font-size: 5.5vw;
-        color: #07457B; }
-      section#splash div.splash-container div.splash-banner h2.subtitle {
-        margin: 0;
-        line-height: 1.2em;
-        letter-spacing: 0;
-        text-align: center;
-        font-size: 1.4em;
-        font-family: "Source Code Pro", serif;
-        color: #07457B;
-        margin-bottom: 1em; }
-        section#splash div.splash-container div.splash-banner h2.subtitle.large {
-          display: block; }
-        section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
-          display: none; }
-        section#splash div.splash-container div.splash-banner h2.subtitle a {
-          color: inherit;
-          cursor: pointer; }
-  section#splash div.splash-text {
-    margin: 0 0 5px 0 !important;
-    padding: 0 !important; }
-    section#splash div.splash-text h2.title {
-      line-height: 1.1em;
-      font-size: 3em;
-      font-size: 5.5vw;
-      margin: 0;
-      letter-spacing: 8px;
-      color: #9CCC65; }
-    section#splash div.splash-text h2.title:focus {
-      outline: 0px solid transparent; }
+  width: 100%;
+}
+/* line 143, scss/main.scss */
+section#splash div.splash-container {
+  font-size: 1em;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 3.5em;
+}
+/* line 152, scss/main.scss */
+section#splash div.splash-container div.splash-banner {
+  width: 100%;
+  height: inherit;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 162, scss/main.scss */
+section#splash div.splash-container div.splash-banner img {
+  /*
+  background: url('../assets/images/jacobshack_logo.png') no-repeat center 0%;
+  background-size: contain;
+  */
+  display: flex;
+  align-self: flex-start;
+  margin-top: 3.5em;
+  width: 100%;
+  max-width: 768px;
+}
+/* line 176, scss/main.scss */
+section#splash div.splash-container div.splash-banner h1.title {
+  margin: 0;
+  letter-spacing: 8px;
+  line-height: 1.2em;
+  font-size: 3em;
+  font-size: 5.5vw;
+  color: #07457B;
+}
+/* line 185, scss/main.scss */
+section#splash div.splash-container div.splash-banner h2.subtitle {
+  margin: 0;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: "Source Code Pro", serif;
+  color: #07457B;
+  margin-bottom: 1em;
+}
+/* line 196, scss/main.scss */
+section#splash div.splash-container div.splash-banner h2.subtitle.large {
+  display: block;
+}
+/* line 199, scss/main.scss */
+section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
+  display: none;
+}
+/* line 203, scss/main.scss */
+section#splash div.splash-container div.splash-banner h2.subtitle a {
+  color: inherit;
+  cursor: pointer;
+}
+/* line 211, scss/main.scss */
+section#splash div.splash-text {
+  margin: 0 0 5px 0 !important;
+  padding: 0 !important;
+}
+/* line 215, scss/main.scss */
+section#splash div.splash-text h2.title {
+  line-height: 1.1em;
+  font-size: 3em;
+  font-size: 5.5vw;
+  margin: 0;
+  letter-spacing: 8px;
+  color: #9CCC65;
+}
+/* line 223, scss/main.scss */
+section#splash div.splash-text h2.title:focus {
+  outline: 0px solid transparent;
+}
 
+/* line 229, scss/main.scss */
 #navbar {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 101; }
-  #navbar .menu {
-    background-color: #000;
-    font-family: "Source Sans Pro", sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    text-align: center;
-    border: 0; }
-    #navbar .menu .item {
-      width: 8em;
-      padding-top: 1.2em;
-      border-bottom: 4px solid transparent;
-      color: #ffffff;
-      font-weight: bold; }
-      #navbar .menu .item.wide {
-        width: 9em; }
-    #navbar .menu #goto-about.item:hover {
-      color: #ffffff;
-      background: #000;
-      border-bottom: 3px solid #07457B; }
-    #navbar .menu #goto-faq.item:hover {
-      color: #ffffff;
-      background: #000;
-      border-bottom: 3px solid #E6E6E6; }
-    #navbar .menu #goto-reg-now.item:hover {
-      color: #ffffff;
-      background: #000;
-      border-bottom: 3px solid #07457B; }
+  z-index: 101;
+}
+/* line 235, scss/main.scss */
+#navbar .menu {
+  background-color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  border: 0;
+}
+/* line 243, scss/main.scss */
+#navbar .menu .item {
+  width: 8em;
+  padding-top: 1.2em;
+  border-bottom: 4px solid transparent;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* line 250, scss/main.scss */
+#navbar .menu .item.wide {
+  width: 9em;
+}
+/* line 255, scss/main.scss */
+#navbar .menu #goto-about.item:hover {
+  color: #ffffff;
+  background: #000;
+  border-bottom: 3px solid #07457B;
+}
+/* line 260, scss/main.scss */
+#navbar .menu #goto-faq.item:hover {
+  color: #ffffff;
+  background: #000;
+  border-bottom: 3px solid #E6E6E6;
+}
+/* line 265, scss/main.scss */
+#navbar .menu #goto-reg-now.item:hover {
+  color: #ffffff;
+  background: #000;
+  border-bottom: 3px solid #07457B;
+}
+/* line 270, scss/main.scss */
+#navbar .menu #goto-schedule.item:hover {
+  color: #ffffff;
+  background: #000;
+  border-bottom: 3px solid #E6E6E6;
+}
+/* line 275, scss/main.scss */
+#navbar .menu #goto-team.item:hover {
+  color: #ffffff;
+  background: #000;
+  border-bottom: 3px solid #07457B;
+}
 
+/* line 283, scss/main.scss */
 #navbar.fixed {
   position: fixed;
   top: 0;
   bottom: auto;
-  z-index: 5; }
+  z-index: 5;
+}
 
+/* line 290, scss/main.scss */
 #infobar {
   background-color: #9CCC65;
-  text-align: center; }
-  #infobar p {
-    color: #ffffff;
-    font-size: 1.2em;
-    padding: 16px;
-    margin: 0; }
+  text-align: center;
+}
+/* line 294, scss/main.scss */
+#infobar p {
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 16px;
+  margin: 0;
+}
 
+/* line 302, scss/main.scss */
 img#techx {
-  width: 100px; }
+  width: 100px;
+}
 
+/* line 306, scss/main.scss */
 section#about {
   background: #07457B;
   min-height: 240px;
   color: #ffffff;
-  z-index: 4; }
-  section#about .ui.page.grid.padded {
-    padding-bottom: 5%; }
-  section#about h2 {
-    text-align: left; }
-  section#about p.droid {
-    text-align: left;
-    font-size: 1.2em; }
+  z-index: 4;
+}
+/* line 312, scss/main.scss */
+section#about .ui.page.grid.padded {
+  padding-bottom: 5%;
+}
+/* line 316, scss/main.scss */
+section#about h2 {
+  text-align: left;
+}
+/* line 320, scss/main.scss */
+section#about p.droid {
+  text-align: left;
+  font-size: 1.2em;
+}
 
+/* line 327, scss/main.scss */
 #social a {
   text-decoration: none;
   color: #07457B;
   text-align: center;
   margin: 0;
-  padding-left: 5px; }
+  padding-left: 5px;
+}
+/* line 334, scss/main.scss */
 #social a:hover {
-  color: #07457B; }
+  color: #07457B;
+}
+/* line 337, scss/main.scss */
 #social .icon {
   font-size: 2em;
   text-align: center;
-  margin: 0.8em 1em; }
+  margin: 0.8em 1em;
+}
+/* line 343, scss/main.scss */
 #social .icon:hover {
   text-shadow: 0 0 3px #42A5F5;
-  cursor: pointer; }
+  cursor: pointer;
+}
+/* line 348, scss/main.scss */
 #social a.social {
   color: #07457B;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+/* line 354, scss/main.scss */
 section#schedule {
   background: #9CCC65;
   min-height: 80px;
-  color: #ffffff; }
-  section#schedule .schedule.grid {
-    margin-top: 20px; }
+  color: #ffffff;
+}
+/* line 358, scss/main.scss */
+section#schedule .schedule.grid {
+  margin-top: 20px;
+}
 
+/* line 363, scss/main.scss */
 section#faq {
   background: #ffffff;
-  z-index: 4; }
-  section#faq .column {
-    text-align: left;
-    margin-bottom: 1.5em; }
-  section#faq .row {
-    margin: 0 auto;
-    border-radius: 4px;
-    background-color: #e6e6e6; }
-  section#faq h2 {
-    color: #07457B;
-    text-align: left;
-    margin-bottom: 1em; }
-  section#faq h2.large {
-    display: block; }
-  section#faq h2.mobile {
-    display: none; }
-  section#faq .question {
-    color: #07457B;
-    font-size: 1.5em; }
-  section#faq p.answer {
-    color: #07457B; }
+  z-index: 4;
+}
+/* line 367, scss/main.scss */
+section#faq .column {
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+/* line 371, scss/main.scss */
+section#faq .row {
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+}
+/* line 376, scss/main.scss */
+section#faq h2 {
+  color: #07457B;
+  text-align: left;
+  margin-bottom: 1em;
+}
+/* line 381, scss/main.scss */
+section#faq h2.large {
+  display: block;
+}
+/* line 384, scss/main.scss */
+section#faq h2.mobile {
+  display: none;
+}
+/* line 387, scss/main.scss */
+section#faq .question {
+  color: #07457B;
+  font-size: 1.5em;
+}
+/* line 391, scss/main.scss */
+section#faq p.answer {
+  color: #07457B;
+}
 
+/* line 396, scss/main.scss */
 section#reg-now {
   background: #07457B;
   min-height: 240px;
   color: #ffffff;
-  z-index: 4; }
-  section#reg-now .ui.page.grid.padded {
-    padding-bottom: 5%; }
-  section#reg-now .reg-now-form-cont {
-    padding: 2em 2em;
-    border-radius: 4px;
-    background-color: #0a60ab; }
-    section#reg-now .reg-now-form-cont .thankyou {
-      margin-top: 1em; }
-    section#reg-now .reg-now-form-cont .reg-now-form {
-      margin-top: 2em; }
-      section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
-        background-color: #000;
-        color: #ffffff;
-        width: auto; }
-      section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
-        background-color: #0d0d0d; }
-      section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
-        background-color: black; }
+  z-index: 4;
+}
+/* line 403, scss/main.scss */
+section#reg-now .ui.page.grid.padded {
+  padding-bottom: 5%;
+}
+/* line 407, scss/main.scss */
+section#reg-now .reg-now-form-cont {
+  padding: 2em 2em;
+  border-radius: 4px;
+  background-color: #0a60ab;
+}
+/* line 412, scss/main.scss */
+section#reg-now .reg-now-form-cont .thankyou {
+  margin-top: 1em;
+}
+/* line 416, scss/main.scss */
+section#reg-now .reg-now-form-cont .reg-now-form {
+  margin-top: 2em;
+}
+/* line 419, scss/main.scss */
+section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
+  background-color: #000;
+  color: #ffffff;
+  width: auto;
+}
+/* line 424, scss/main.scss */
+section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
+  background-color: #0d0d0d;
+}
+/* line 427, scss/main.scss */
+section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
+  background-color: black;
+}
 
 /** Final stuff **/
+/* line 437, scss/main.scss */
 section#sponsor {
   background: white;
   color: #9CCC65; }
@@ -339,51 +498,76 @@ section#sponsor {
   margin: 0;
   padding: 0;
   /*padding-top: 0;*/
-  z-index: 4; }
-  #footer .jacobshack-map {
-    position: relative;
-    /*@extend .flex;*/
-    margin: 0;
-    padding: 0;
-    width: 100%; }
-  #footer #color-bars {
-    /*padding-top: 2em;*/
-    margin: 0;
-    padding: 0; }
-    #footer #color-bars div {
-      width: 33.33333%;
-      float: left;
-      height: 3em; }
-    #footer #color-bars #color-bar1 {
-      background-color: #E6E6E6; }
-    #footer #color-bars #color-bar2 {
-      background-color: #07457B; }
-    #footer #color-bars #color-bar3 {
-      background-color: #BE3B00; }
+  z-index: 4;
+}
+/* line 502, scss/main.scss */
+#footer .jacobshack-map {
+  position: relative;
+  /*@extend .flex;*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 513, scss/main.scss */
+#footer #color-bars {
+  /*padding-top: 2em;*/
+  margin: 0;
+  padding: 0;
+}
+/* line 518, scss/main.scss */
+#footer #color-bars div {
+  width: 33.33333%;
+  float: left;
+  height: 3em;
+}
+/* line 523, scss/main.scss */
+#footer #color-bars #color-bar1 {
+  background-color: #E6E6E6;
+}
+/* line 524, scss/main.scss */
+#footer #color-bars #color-bar2 {
+  background-color: #07457B;
+}
+/* line 525, scss/main.scss */
+#footer #color-bars #color-bar3 {
+  background-color: #BE3B00;
+}
 
 /* hiding faq */
+/* line 531, scss/main.scss */
 .angle {
   display: none;
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+}
 
+/* line 537, scss/main.scss */
 .angle-rotated {
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+  transform: rotate(-90deg);
+}
 
+/* line 542, scss/main.scss */
 .answer-hidden {
-  display: none; }
+  display: none;
+}
 
+/* line 545, scss/main.scss */
 .question-hidden {
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 549, scss/main.scss */
 #dot {
-  transition: color 0.5s ease; }
-  #dot:hover {
-    color: #BE3B00;
-    cursor: pointer; }
+  transition: color 0.5s ease;
+}
+/* line 551, scss/main.scss */
+#dot:hover {
+  color: #BE3B00;
+  cursor: pointer;
+}
 
 /* Responsive */
 /*@media only screen and (max-width: 1000px) {
@@ -398,224 +582,362 @@ section#sponsor {
 }*/
 @media only screen and (max-width: 1000px) and (min-width: 786px) {
   /* Change font size on mobile devices */
+  /* line 575, scss/main.scss */
   section#faq h2.large {
-    display: none; }
+    display: none;
+  }
+  /* line 578, scss/main.scss */
   section#faq h2.mobile {
-    display: block; }
+    display: block;
+  }
 
+  /* line 583, scss/main.scss */
   section#about {
     padding-top: 2%;
-    padding-bottom: 1%; }
-    section#about h2 {
-      font-size: 2.5em;
-      margin-right: 5px; }
-    section#about p.droid {
-      font-size: 1.5  em; } }
+    padding-bottom: 1%;
+  }
+  /* line 586, scss/main.scss */
+  section#about h2 {
+    font-size: 2.5em;
+    margin-right: 5px;
+  }
+  /* line 590, scss/main.scss */
+  section#about p.droid {
+    font-size: 1.5  em;
+  }
+}
 @media only screen and (max-width: 786px) {
+  /* line 598, scss/main.scss */
   html, body {
-    font-size: 1em; }
+    font-size: 1em;
+  }
 
+  /* line 602, scss/main.scss */
   #navbar .menu .item {
     width: 7em;
     padding-left: 0.4em;
-    padding-right: 0.4em; }
+    padding-right: 0.4em;
+  }
 
+  /* line 609, scss/main.scss */
   section#about h2 {
-    font-size: 2em; }
+    font-size: 2em;
+  }
 
+  /* line 616, scss/main.scss */
   section#splash div.splash-container {
-    display: block; }
-    section#splash div.splash-container div.splash-banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-top: 2em;
-      margin-top: 5.5vh; }
-      section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
-        transform: rotate(0deg);
-        text-align: center; }
-      section#splash div.splash-container div.splash-banner .splash-img {
-        height: 60vh;
-        float: none; }
-      section#splash div.splash-container div.splash-banner .splash-col {
-        float: none;
-        width: 100%;
-        display: block;
-        text-align: center; }
-      section#splash div.splash-container div.splash-banner .splash-title-cont {
-        margin-top: 0;
-        width: 100%; }
-      section#splash div.splash-container div.splash-banner h1.title {
-        letter-spacing: 8px;
-        letter-spacing: 1vh;
-        font-size: 3em;
-        font-size: 8vh; }
-      section#splash div.splash-container div.splash-banner h2.subtitle {
-        line-height: 1.2em;
-        line-height: 3.2vh;
-        letter-spacing: 0;
-        font-size: 1.4em;
-        font-size: 3.7vh; }
-        section#splash div.splash-container div.splash-banner h2.subtitle.date {
-          margin-bottom: 0; }
+    display: block;
+  }
+  /* line 619, scss/main.scss */
+  section#splash div.splash-container div.splash-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-top: 5.5vh;
+  }
+  /* line 627, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+    transform: rotate(0deg);
+    text-align: center;
+  }
+  /* line 632, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .splash-img {
+    height: 60vh;
+    float: none;
+  }
+  /* line 637, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .splash-col {
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  /* line 644, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .splash-title-cont {
+    margin-top: 0;
+    width: 100%;
+  }
+  /* line 649, scss/main.scss */
+  section#splash div.splash-container div.splash-banner h1.title {
+    letter-spacing: 8px;
+    letter-spacing: 1vh;
+    font-size: 3em;
+    font-size: 8vh;
+  }
+  /* line 656, scss/main.scss */
+  section#splash div.splash-container div.splash-banner h2.subtitle {
+    line-height: 1.2em;
+    line-height: 3.2vh;
+    letter-spacing: 0;
+    font-size: 1.4em;
+    font-size: 3.7vh;
+  }
+  /* line 663, scss/main.scss */
+  section#splash div.splash-container div.splash-banner h2.subtitle.date {
+    margin-bottom: 0;
+  }
 
+  /* line 671, scss/main.scss */
   section.ui.page.grid.padded {
     padding-top: 10%;
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+  }
 
+  /* line 676, scss/main.scss */
   .question {
-    cursor: pointer; }
+    cursor: pointer;
+  }
 
+  /* line 680, scss/main.scss */
   #navbar.fixed {
-    position: relative; }
+    position: relative;
+  }
 
+  /* line 684, scss/main.scss */
   section#sponsor {
     padding-left: 0;
-    padding-right: 0; }
-    section#sponsor img {
-      margin: 1.5em 2em; }
-    section#sponsor .platinum img {
-      width: 50%; }
-    section#sponsor .gold img {
-      width: 37%; }
-    section#sponsor .silver img {
-      width: 25%; }
-    section#sponsor .bronze img {
-      width: 15%; } }
+    padding-right: 0;
+  }
+  /* line 688, scss/main.scss */
+  section#sponsor img {
+    margin: 1.5em 2em;
+  }
+  /* line 692, scss/main.scss */
+  section#sponsor .platinum img {
+    width: 50%;
+  }
+  /* line 696, scss/main.scss */
+  section#sponsor .gold img {
+    width: 37%;
+  }
+  /* line 700, scss/main.scss */
+  section#sponsor .silver img {
+    width: 25%;
+  }
+  /* line 704, scss/main.scss */
+  section#sponsor .bronze img {
+    width: 15%;
+  }
+}
 @media only screen and (max-width: 480px) {
+  /* line 715, scss/main.scss */
   section#splash div.splash-container div.splash-banner {
-    margin-top: 0; }
-    section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
-      transform: rotate(0deg);
-      margin-top: 10vw; }
-    section#splash div.splash-container div.splash-banner .splash-img {
-      transform: rotate(0deg);
-      width: 90vw; }
-    section#splash div.splash-container div.splash-banner .title {
-      font-size: 2.8em !important; }
-    section#splash div.splash-container div.splash-banner h2.subtitle.large {
-      display: none; }
-    section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
-      display: block; }
+    margin-top: 0;
+  }
+  /* line 718, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+    transform: rotate(0deg);
+    margin-top: 10vw;
+  }
+  /* line 723, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .splash-img {
+    transform: rotate(0deg);
+    width: 90vw;
+  }
+  /* line 728, scss/main.scss */
+  section#splash div.splash-container div.splash-banner .title {
+    font-size: 2.8em !important;
+  }
+  /* line 733, scss/main.scss */
+  section#splash div.splash-container div.splash-banner h2.subtitle.large {
+    display: none;
+  }
+  /* line 736, scss/main.scss */
+  section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
+    display: block;
+  }
+  /* line 743, scss/main.scss */
   section#splash div.splash-container div.splash-text .title {
-    font-size: 2.8em; }
+    font-size: 2.8em;
+  }
 
+  /* line 750, scss/main.scss */
   section h2 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+  }
 
+  /* line 754, scss/main.scss */
   section#sponsor {
     padding-left: 0;
-    padding-right: 0; }
-    section#sponsor img {
-      margin: 1em 2em; }
-    section#sponsor .platinum img {
-      width: 75%; }
-    section#sponsor .gold img {
-      width: 65%; }
-    section#sponsor .silver img {
-      width: 45%; }
-    section#sponsor .bronze img {
-      width: 25%; } }
+    padding-right: 0;
+  }
+  /* line 758, scss/main.scss */
+  section#sponsor img {
+    margin: 1em 2em;
+  }
+  /* line 762, scss/main.scss */
+  section#sponsor .platinum img {
+    width: 75%;
+  }
+  /* line 766, scss/main.scss */
+  section#sponsor .gold img {
+    width: 65%;
+  }
+  /* line 770, scss/main.scss */
+  section#sponsor .silver img {
+    width: 45%;
+  }
+  /* line 774, scss/main.scss */
+  section#sponsor .bronze img {
+    width: 25%;
+  }
+}
 @media only screen and (max-width: 320px) and (width: 320px) {
+  /* line 782, scss/main.scss */
   #navbar .menu .item {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     padding: 0;
     width: 5em;
     font-size: 0.9em;
-    padding-right: 0.4em; }
+    padding-right: 0.4em;
+  }
 
+  /* line 799, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
-    margin-top: 0; }
+    margin-top: 0;
+  }
+  /* line 804, scss/main.scss */
   section#splash div.splash-container div.splash-banner .splash-img {
     transform: rotate(0deg);
     width: auto;
-    height: auto; }
+    height: auto;
+  }
+  /* line 810, scss/main.scss */
   section#splash div.splash-container div.splash-banner .title {
-    font-size: 2.5em !important; }
+    font-size: 2.5em !important;
+  }
+  /* line 816, scss/main.scss */
   section#splash div.splash-container div.splash-text .title {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+  }
 
+  /* line 823, scss/main.scss */
   section.ui.page.grid.padded {
     padding-top: 20%;
-    padding-bottom: 20%; }
+    padding-bottom: 20%;
+  }
 
+  /* line 827, scss/main.scss */
   section input {
-    margin: 2px auto; }
+    margin: 2px auto;
+  }
 
+  /* line 830, scss/main.scss */
   section h2 {
     font-size: 2em;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+  }
 
+  /* line 834, scss/main.scss */
   section#faq .question {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+  }
 
+  /* line 838, scss/main.scss */
   section#splash div.splash-container {
     padding-bottom: 0em;
-    display: block; }
-    section#splash div.splash-container div.splash-banner h1.title {
-      font-size: 1.5em; }
+    display: block;
+  }
+  /* line 843, scss/main.scss */
+  section#splash div.splash-container div.splash-banner h1.title {
+    font-size: 1.5em;
+  }
+  /* line 849, scss/main.scss */
   section#splash div.splash-text h2.title {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+  }
 
+  /* line 855, scss/main.scss */
   section#sponsor {
     padding-left: 0;
-    padding-right: 0; }
-    section#sponsor img {
-      margin: 1em; }
-    section#sponsor .platinum img {
-      width: 75%; }
-    section#sponsor .gold img {
-      width: 65%; }
-    section#sponsor .silver img {
-      width: 45%; }
-    section#sponsor .bronze img {
-      width: 30%; }
+    padding-right: 0;
+  }
+  /* line 859, scss/main.scss */
+  section#sponsor img {
+    margin: 1em;
+  }
+  /* line 863, scss/main.scss */
+  section#sponsor .platinum img {
+    width: 75%;
+  }
+  /* line 867, scss/main.scss */
+  section#sponsor .gold img {
+    width: 65%;
+  }
+  /* line 871, scss/main.scss */
+  section#sponsor .silver img {
+    width: 45%;
+  }
+  /* line 875, scss/main.scss */
+  section#sponsor .bronze img {
+    width: 30%;
+  }
 
+  /* line 881, scss/main.scss */
   section#footer .icon {
-    width: 20px; }
+    width: 20px;
+  }
+  /* line 885, scss/main.scss */
   section#footer #color-bars div {
-    height: 1.5em; } }
+    height: 1.5em;
+  }
+}
+/* line 891, scss/main.scss */
 .jacobshack-map {
   width: 100%;
-  height: 468px; }
+  height: 468px;
+}
 
+/* line 897, scss/main.scss */
 section#team div#image_grid {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap; }
-  section#team div#image_grid div.image_container {
-    position: relative; }
-    section#team div#image_grid div.image_container img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      padding: 40px;
-      display: block; }
-    section#team div#image_grid div.image_container div {
-      display: none; }
-  section#team div#image_grid a {
-    color: #07457B; }
-    section#team div#image_grid a div.image_container:hover div {
-      display: flex;
-      background: rgba(255, 255, 255, 0.5);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      justify-content: center;
-      align-items: center; }
-      section#team div#image_grid a div.image_container:hover div span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 100px;
-        font-size: large; }
-
-/*# sourceMappingURL=main.css.map */
+  flex-wrap: wrap;
+}
+/* line 902, scss/main.scss */
+section#team div#image_grid div.image_container {
+  position: relative;
+}
+/* line 904, scss/main.scss */
+section#team div#image_grid div.image_container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 40px;
+  display: block;
+}
+/* line 911, scss/main.scss */
+section#team div#image_grid div.image_container div {
+  display: none;
+}
+/* line 915, scss/main.scss */
+section#team div#image_grid a {
+  color: #07457B;
+}
+/* line 918, scss/main.scss */
+section#team div#image_grid a div.image_container:hover div {
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+/* line 928, scss/main.scss */
+section#team div#image_grid a div.image_container:hover div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  font-size: large;
+}
