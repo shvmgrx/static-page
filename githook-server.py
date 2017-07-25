@@ -1,7 +1,7 @@
 from flask import Flask, request
 import logging
 import json
-import sys
+import subprocess
 
 # Event logger
 logger = logging.getLogger('Githooks logger')
@@ -26,14 +26,24 @@ success_request = {
 def intro():
     if request.method == 'POST':
         payload = request.data
-        logger.info(payload)
-        logger.info('Recieved a github event')
+        branch_name = payload.ref.split("/")[0]
+        logger.info('Recieved a github event at branch %s'.format(branch_name))
+        run_shell_script(branch_name)    
         return json.dumps(success_request)
     else:
         return 'Hello, world'
 
-def run_shell_script():
-    pass
+def run_shell_script(name='master'):
+    """
+    Evoke shell script
+    :param name: Name of the branch     
+    """
+    if name == 'master':
+        # run the master deploy script
+        subprocess.Popen('bash deploy.sh')
+    elif name == 'develop':
+        # run the dev deploy script
+        subprocess.Popen('bash deploy-dev.sh')
 
 if __name__ == '__main__':
     app.run()
