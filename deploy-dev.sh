@@ -5,11 +5,8 @@ git pull
 
 git checkout master
 
-# Deploy main site
+# Deploy staging site
+git checkout develop
 scss --update static-page/stylesheets/scss:static-page/stylesheets -f
-cp static-page/* /var/www/2016.jacobshack.com/ -Rf
+cp ./ /var/www/2017f.jacobshack.com/ -Rf
 
-# Update staging site
-git checkout gh-pages
-scss --update static-page/stylesheets/scss:static-page/stylesheets -f
-cp static-page/* /var/www/2016.jacobshack.com/dev/ -Rf
