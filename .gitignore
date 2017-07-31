@@ -2,3 +2,6 @@
 .idea/
 stylesheets/.sass-cache/
 .sass-cache/
+
+# log files
+*.log
