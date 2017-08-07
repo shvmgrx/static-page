@@ -44,6 +44,15 @@ var paths = {
     }
 };
 
+// remove build dir if it already exists
+fs.exists(__dirname + '/dist', (exists)=>{
+    if(exists){
+        fs.rmdir(__dirname + '/', (st)=>{
+            //
+        })
+    }
+});
+
 gulp.task('compass', function() {
   gulp.src(paths.styles.src)
     .pipe(compass({
