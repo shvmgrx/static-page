@@ -16,7 +16,7 @@ before_install:
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
   - ssh-add /tmp/deploy_rsa
-after_install:
+script:
   - npm install -g gulp-cli yarn
   - npm run build
 deploy:
