@@ -15,8 +15,8 @@ var gutil = require("gulp-util");
 // make build directory
 var paths = {
     styles: {
-        src: './stylesheets/scss/**/*.scss',
-        config: './stylesheets/config.rb',
+        src: './stylesheets/scss/*.scss',
+        config: './config.rb',
         output: './dist/stylesheets/'
     },
     assets: {
@@ -27,7 +27,7 @@ var paths = {
                 './assets/images/**/*.png', // PNGs 
                 './assets/images/**/*.svg' // SVGs
             ],
-            output: './dist/images/'
+            output: './dist/assets/images/'
         },
         pdf: {
             src: './*.pdf',
@@ -39,7 +39,7 @@ var paths = {
         output: './dist/'
     },
     js: {
-        src: './js/**/.js',
+        src: './js/**/*.js',
         output: './dist/js'
     }
 };
@@ -48,10 +48,10 @@ gulp.task('compass', function() {
   gulp.src(paths.styles.src)
     .pipe(compass({
       config_file: paths.styles.config,
-      css: 'stylesheets',
-      sass: 'sass'
+      css: 'dist/stylesheets',
+      sass: 'stylesheets/scss'
     }))
-    .on('error', gutil.log)
+    // .on('error', gutil.log)
     .pipe(gulp.dest(paths.styles.output));
 });
 
