@@ -27,11 +27,11 @@ script:
 deploy:
 - provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist ngetahun@jacobshack.com:/var/www/jacobshack.com
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist/* ngetahun@jacobshack.com:/var/www/jacobshack.com
   on:
     branch: master
 - provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist ngetahun@jacobshack.com:/var/www/2017f.jacobshack.com
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist/* ngetahun@jacobshack.com:/var/www/2017f.jacobshack.com
   on:
     branch: develop
