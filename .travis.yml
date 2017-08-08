@@ -1,8 +1,12 @@
+sudo: true
 language: node_js
 node_js:
   - "7.2"
 addons:
   ssh_known_hosts: jacobshack.com
+  apt:
+    packages:
+      - ruby
 branches:
   only:
   - master
@@ -16,6 +20,7 @@ before_install:
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
   - ssh-add /tmp/deploy_rsa
+  - gem install compass
 script:
   - npm install -g gulp-cli yarn
   - npm run build
